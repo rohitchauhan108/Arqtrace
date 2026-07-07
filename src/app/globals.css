@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #BC8B57;
+  --color-secondary: #1F1F1F;
+  --color-text-soft: #707070;
+  --color-bg-cream: #F8F7F2;
+  
+  --font-plus-jakarta: "Plus Jakarta Sans", sans-serif;
+
+  @keyframes slideDown {
+    from { transform: translateY(-100%); }
+    to { transform: translateY(0); }
+  }
+  --animate-slideDown: slideDown 0.3s ease-out forwards;
+}
+
+:root {
+  --background: #ffffff;
+  --foreground: #1F1F1F;
+  --primary: #BC8B57;
+  --secondary: #1F1F1F;
+  --text-soft: #707070;
+  --bg-cream: #F8F7F2;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-plus-jakarta);
+  overflow-x: hidden;
+}
+
+/* Interactive elements should still have standard pointers if requested, 
+   but the custom cursor will follow them */
+a, button, [role="button"] {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--secondary);
+  font-weight: 700;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-cream);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--primary);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a67a4c;
+}
