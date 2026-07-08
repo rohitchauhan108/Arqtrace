@@ -8,13 +8,13 @@ const services = [
     icon: <DoorOpen className="w-10 h-10 stroke-[1.2]" />,
     title: "Aluminum Windows",
     description: "Premium aluminum window systems designed for durability, refined aesthetics, and lasting performance in both modern homes and commercial spaces.",
-    image: "/about-section/1.jpg",
+    image: "/home/1.webp",
   },
   {
     icon: <Layout className="w-10 h-10 stroke-[1.2]" />,
-    title: "uPVC Windows & Doors",
+    title: "UPVC Windows & Doors",
     description: "Energy-efficient and low-maintenance products that bring comfort, insulation, and elegance to every project.",
-    image: "/about-section/2.jpg",
+    image: "/home/4.webp",
   },
   {
     icon: <ShieldAlert className="w-10 h-10 stroke-[1.2]" />,
@@ -26,7 +26,7 @@ const services = [
     icon: <Sofa className="w-10 h-10 stroke-[1.2]" />,
     title: "Outdoor Furniture",
     description: "Premium outdoor furniture pieces that merge comfort and craftsmanship for elegant terrace, garden, and hospitality spaces.",
-    image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=500&q=80",
+    image: "/home/5.webp",
   },
 ];
 

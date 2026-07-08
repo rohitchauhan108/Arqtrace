@@ -90,9 +90,9 @@ const Projects = () => {
                 <span className="block text-[10px] font-bold uppercase tracking-widest text-[#bd845c] mb-1 !group-hover:text-white transition-colors duration-500">
                   {project.category}
                 </span>
-                <h4 className="text-sm md:text-base font-serif font-bold text-[#2d1e18] truncate transition-colors duration-500 !group-hover:text-white">
+                <p className="text-sm md:text-base font-serif font-bold text-[#2d1e18] truncate transition-colors duration-500 group-hover:text-white">
                   {project.title}
-                </h4>
+                </p>
               </div>
             </div>
           ))}

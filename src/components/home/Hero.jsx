@@ -11,22 +11,36 @@ const SLIDES_DATA = [
     title: "Windows, Doors & Partitions Crafted for Modern Living",
     description:
       "Arqtrace brings premium aluminum and uPVC windows, doors, partitions, and outdoor furniture to homes and projects with design-forward quality and enduring performance.",
-    mainImage: "/about-section/1.jpg",
+    mainImage: "/hero-slider/1.jpg",
   },
   {
     subtitle: "Trusted Premium Brands",
     title: "Luxury Products Backed by Expert Guidance",
     description:
       "We are the trusted dealer of Lumani, SCHUCO, Winda, and Gebe solutions, offering innovation that elevates comfort, style, and durability.",
-    mainImage: "/about-section/2.jpg",
+    mainImage: "/hero-slider/2.jpg",
   },
   {
     subtitle: "Seamless Installation",
     title: "Professional Delivery From Consultation to Completion",
     description:
       "From the first consultation to flawless installation, our team ensures every project is completed with precision and care.",
-    mainImage: "/about-section/3.jpg",
+    mainImage: "/hero-slider/3.jpg",
   },
+  {
+  subtitle: "Architectural Glass & Facades",
+  title: "Elegant Glass Systems That Transform Every Space",
+  description:
+    "Create brighter, more sophisticated interiors with premium glass facades, office partitions, railings, and structural glazing solutions engineered for strength, aesthetics, and lasting performance.",
+  mainImage: "/about-section/1.jpg",
+},
+{
+  subtitle: "Outdoor Living Collection",
+  title: "Premium Pergolas & Outdoor Furniture for Timeless Comfort",
+  description:
+    "Enhance terraces, gardens, balconies, and commercial spaces with stylish pergolas, outdoor furniture, and weather-resistant architectural solutions designed to blend luxury with functionality.",
+  mainImage: "/home/5.webp",
+},
 ];
 
 const Hero = () => {
@@ -104,9 +118,7 @@ const Hero = () => {
 
               <div className="relative w-full h-full overflow-hidden bg-stone-100 flex items-center justify-center">
                 <img src={currentSlide.mainImage} alt="Arqtrace premium product showcase" className="w-full h-full object-cover" />
-                <button className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-1/2 w-16 h-16 bg-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform group z-20">
-                  <Play className="w-4 h-4 text-[#bd845c] fill-[#bd845c] ml-0.5" />
-                </button>
+                
               </div>
             </motion.div>
           </AnimatePresence>

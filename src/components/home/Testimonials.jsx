@@ -18,7 +18,7 @@ const testimonialsData = [
     role: "Architect",
     avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=120&h=120&q=80",
     text: "Our experienced team is here to guide you through the selection process, ensuring you find the perfect windows, doors, and outdoor furniture for your specific needs.",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    image: "/home/2.webp",
   },
   {
     id: 3,
@@ -26,7 +26,7 @@ const testimonialsData = [
     role: "Developer",
     avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=120&h=120&q=80",
     text: "Our team provides expert consultation to help you choose the right products and ensures seamless installation for a hassle-free experience.",
-    image: "https://images.unsplash.com/photo-1548611635-b6e78cb1aea6?auto=format&fit=crop&w=800&q=80",
+    image: "/home/5.webp",
   },
 ];
 

@@ -13,8 +13,12 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata = {
-  title: "Floens – Tiling & Flooring Service",
-  description: "Professional Tiling and Flooring services for your home and office.",
+  title: "Leading Windows, Doors & outdoor Furniture | Arqtrace PVT. LTD.",
+  description: "Learn about Arqtrace, trusted provider of aluminum & uPVC windows, doors, and outdoor furniture. Quality craftsmanship & innovation at its best. contact us today.",
+  icons:{
+    icon: "/favicon.png",
+    
+  }
 };
 
 export default function RootLayout({ children }) {

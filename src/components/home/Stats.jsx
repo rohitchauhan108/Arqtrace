@@ -48,9 +48,9 @@ const Stats = () => {
               </div>
 
               {/* Count Header (Maintained pure white color tracking on hover states) */}
-              <h3 className="text-3xl md:text-4xl font-serif font-black text-white tracking-tight mb-2 relative z-10 transition-colors duration-300">
+              <p className="text-3xl md:text-4xl font-serif font-black  text-white tracking-tight mb-2 relative z-50 transition-colors duration-300">
                 {item.count}
-              </h3>
+              </p>
 
               {/* Label Text Description Info */}
               <p className="text-stone-400 text-xs font-sans font-bold uppercase tracking-[0.2em] relative z-10 group-hover:text-stone-200 transition-colors duration-300">
