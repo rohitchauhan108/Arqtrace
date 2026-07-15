@@ -11,7 +11,7 @@ const AboutContent = () => {
       <section 
         className="relative min-h-[500px] lg:min-h-[650px] w-full overflow-hidden flex items-center select-none"
         style={{ 
-          backgroundImage: "url('/home/5.webp')", 
+          backgroundImage: "url('/images/10.webp')", 
           backgroundSize: "cover", 
           backgroundPosition: "center" 
         }}
@@ -43,24 +43,24 @@ const AboutContent = () => {
       {/* About Story Block Section */}
       <section className="relative py-24 lg:py-32 bg-white select-none">
         <div className="container mx-auto px-6 lg:px-16">
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
             
-            {/* Left Image Multi-Grid Frame */}
-            <div className="lg:col-span-6 grid grid-cols-12 gap-4 items-stretch">
-              <div className="col-span-6 flex flex-col gap-4">
-                <div className="aspect-[4/5] overflow-hidden shadow-md border border-stone-100 bg-stone-50">
-                  <img src="/about-section/1.jpg" alt="Arqtrace premium aluminium window" className="w-full h-full object-cover" />
-                </div>
-                <div className="aspect-[4/3] overflow-hidden shadow-md border border-stone-100 bg-stone-50">
-                  <img src="/about-section/2.jpg" alt="Arqtrace premium door and partition" className="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div className="col-span-6">
-                <div className="h-full min-h-[400px] overflow-hidden shadow-lg border border-stone-100 bg-stone-50">
-                  <img src="/about-section/3.jpg" alt="Arqtrace installation expertise" className="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
+          {/* Left Image Multi-Grid Frame (2x2 Layout) */}
+<div className="lg:col-span-6 grid grid-cols-2 gap-4 auto-rows-fr">
+  <div className="aspect-[4/5] sm:aspect-square overflow-hidden shadow-md border border-stone-100 bg-stone-50">
+    <img src="/images/6.webp" alt="Arqtrace premium aluminium window" className="w-full h-full object-cover" />
+  </div>
+  <div className="aspect-[4/5] sm:aspect-square overflow-hidden shadow-md border border-stone-100 bg-stone-50">
+    <img src="/images/8.webp" alt="Arqtrace installation expertise" className="w-full h-full object-cover" />
+  </div>
+  <div className="aspect-[4/5] sm:aspect-square overflow-hidden shadow-md border border-stone-100 bg-stone-50">
+    <img src="/images/7.webp" alt="Arqtrace premium door and partition" className="w-full h-full object-cover" />
+  </div>
+  <div className="aspect-[4/5] sm:aspect-square overflow-hidden shadow-md border border-stone-100 bg-stone-50">
+    {/* Placeholder or 4th image to balance the 2x2 grid */}
+    <img src="/images/9.webp" alt="Arqtrace outdoor furniture" className="w-full h-full object-cover" />
+  </div>
+</div>
 
             {/* Right Story Text Column Content */}
             <div className="lg:col-span-6 flex flex-col justify-center space-y-8">
@@ -146,7 +146,7 @@ const AboutContent = () => {
           <div className="w-full h-full rounded-full overflow-hidden relative">
             <div className="absolute inset-0 bg-[#2d1e18]/20 group-hover:bg-transparent transition-all duration-500 z-10" />
             <img 
-              src="/about-section/2.jpg" 
+              src="/images/10.webp" 
               alt="Consultation & Design" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
@@ -172,7 +172,7 @@ const AboutContent = () => {
           <div className="w-full h-full rounded-full overflow-hidden relative">
             <div className="absolute inset-0 bg-[#2d1e18]/20 group-hover:bg-transparent transition-all duration-500 z-10" />
             <img 
-              src="/hero-slider/2.jpg" 
+              src="/images/3.webp" 
               alt="Material Selection" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
@@ -198,7 +198,7 @@ const AboutContent = () => {
           <div className="w-full h-full rounded-full overflow-hidden relative">
             <div className="absolute inset-0 bg-[#2d1e18]/20 group-hover:bg-transparent transition-all duration-500 z-10" />
             <img 
-              src="/hero-slider/3.jpg" 
+              src="/images/4.webp" 
               alt="Precision Engineering" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
@@ -224,7 +224,7 @@ const AboutContent = () => {
           <div className="w-full h-full rounded-full overflow-hidden relative">
             <div className="absolute inset-0 bg-[#2d1e18]/20 group-hover:bg-transparent transition-all duration-500 z-10" />
             <img 
-              src="/home/1.webp" 
+              src="/images/5.webp" 
               alt="Expert Installation" 
               className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
             />
@@ -256,13 +256,13 @@ const AboutContent = () => {
             <div className="lg:col-span-6 relative grid grid-cols-12 gap-4 items-center">
               <div className="col-span-8 relative z-10">
                 <div className=" overflow-hidden shadow-xl border border-stone-200/20 bg-stone-100">
-                  <img src="/home/1.webp" alt="Modern clean luxury home architecture interior layout" className="w-full h-[300px] object-cover" />
+                  <img src="/project/p1/3.webp" alt="Modern clean luxury home architecture interior layout" className="w-full h-[300px] object-cover" />
                 </div>
               </div>
               
               <div className="col-span-6 absolute -right-4 bottom-8 z-0">
                 <div className=" overflow-hidden shadow-lg border border-stone-200/30 bg-stone-100">
-                  <img src="/home/5.webp" alt="Premium custom minimalist window profiles frame installation" className="w-full h-full object-cover grayscale-[15%]" />
+                  <img src="/project/p1/2.webp" alt="Premium custom minimalist window profiles frame installation" className="w-full h-full object-cover grayscale-[15%]" />
                 </div>
               </div>
 
@@ -328,7 +328,7 @@ const AboutContent = () => {
 
       {/* Partner Logos Section */}
      {/* Partner Logos Marquee Section */}
-<section className="py-20 lg:py-24 bg-[#fbf9f4] relative overflow-hidden select-none">
+      <section className="py-20 lg:py-24 bg-[#fbf9f4] relative overflow-hidden select-none">
   <div className="absolute inset-0 bg-[url('/bg-pattern.png')] opacity-30 pointer-events-none" />
   
   <div className="container mx-auto px-6 lg:px-16 relative z-10">

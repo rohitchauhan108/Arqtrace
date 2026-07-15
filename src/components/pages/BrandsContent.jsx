@@ -12,7 +12,7 @@ const BrandsContent = () => {
       subtitle: "Premium Aluminum Windows & Doors",
       description:
         "Arqtrace is the premium dealer of Lumani SCHUCO, a brand known for its superior aluminum windows and doors. With over 12 years in the industry Lumani SCHUCO products combine German engineering with modern aesthetics. SCHUCO manufactures the finest raw materials and Lumani delivers these high-end solutions to customers. These aluminum windows and doors offer advanced thermal insulation, noise reduction and security features. With a 10-year warranty on all hardware and accessories Lumani SCHUCO is a trusted choice for homeowners and builders alike.",
-      image: "/about-section/1.jpg",
+      image: "/project/p1/4.webp",
       href: "/lumani-schuco",
       features: ["German Engineering", "10-Year Warranty", "Thermal Insulation", "Noise Reduction"],
     },
@@ -21,7 +21,7 @@ const BrandsContent = () => {
       subtitle: "Trusted uPVC Windows & Doors",
       description:
         "With 13 years of expertise Winda is a well-established name in the uPVC windows and doors industry. Arqtrace brings you Winda's energy-efficient and low-maintenance solutions crafted for durability and style. These uPVC windows and doors are resistant to weather changes, corrosion and external noise making them an ideal choice for modern homes and commercial spaces. Backed by a 21-year warranty Winda ensures long-lasting quality and performance.",
-      image: "/home/4.webp",
+      image: "/project/p1/1.webp",
       href: "/winda",
       features: ["13 Years Expertise", "21-Year Warranty", "Energy Efficient", "Weather Resistant"],
     },
@@ -30,7 +30,7 @@ const BrandsContent = () => {
       subtitle: "Premium Outdoor Furniture",
       description:
         "Gebe has been a leading manufacturer of outdoor furniture for over 15 years offering top-quality products for gardens, patios, balconies and commercial outdoor spaces. Gebe's modern and durable furniture is built to withstand harsh weather conditions while adding elegance and comfort to any setting. Whether for homes, hotels, resorts or cafes. Gebe's furniture enhances outdoor living spaces with its stylish and resilient designs. Every product comes with a 5-year warranty ensuring reliability and longevity.",
-      image: "/home/3.webp",
+      image: "/project/p2/6.webp",
       href: "/gebe",
       features: ["15+ Years Experience", "5-Year Warranty", "Weather Resistant", "Stylish Designs"],
     },

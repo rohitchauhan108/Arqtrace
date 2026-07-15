@@ -8,22 +8,22 @@ const projects = [
   {
     title: "Luxury Aluminum Sliding Doors",
     category: "Premium Entryways",
-    image: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80",
+    image: "/project/p1/7.webp",
   },
   {
     title: "Contemporary uPVC Window Systems",
     category: "Energy-Efficient Living",
-    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80",
+    image: "/project/p2/6.webp",
   },
   {
     title: "Glass Partitions for Modern Offices",
     category: "Interior Glazing",
-    image: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?auto=format&fit=crop&w=800&q=80",
+    image: "/images/10.webp",
   },
   {
     title: "Outdoor Furniture Collections",
     category: "Exterior Comfort",
-    image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=800&q=80",
+    image: "/home/5.webp",
   },
 ];
 

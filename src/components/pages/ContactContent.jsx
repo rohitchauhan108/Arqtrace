@@ -11,8 +11,8 @@ const ContactContent = () => {
       <section 
         className="relative min-h-[500px] lg:h-[600px] w-full bg-[#2d1e18] overflow-hidden flex items-center select-none" 
         style={{ 
-          backgroundImage: "url('https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=2070&auto=format&fit=crop')", 
-          backgroundSize: "cover", 
+          backgroundImage: "url('/images/1.webp')", 
+          backgroundSize: "contain", 
           backgroundPosition: "center" 
         }}
       >

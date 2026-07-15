@@ -11,21 +11,21 @@ const SLIDES_DATA = [
     title: "Windows, Doors & Partitions Crafted for Modern Living",
     description:
       "Arqtrace brings premium aluminum and uPVC windows, doors, partitions, and outdoor furniture to homes and projects with design-forward quality and enduring performance.",
-    mainImage: "/hero-slider/1.jpg",
+    mainImage: "/project/p2/3.webp",
   },
   {
     subtitle: "Trusted Premium Brands",
     title: "Luxury Products Backed by Expert Guidance",
     description:
       "We are the trusted dealer of Lumani, SCHUCO, Winda, and Gebe solutions, offering innovation that elevates comfort, style, and durability.",
-    mainImage: "/hero-slider/2.jpg",
+    mainImage: "/project/p1/5.webp",
   },
   {
     subtitle: "Seamless Installation",
     title: "Professional Delivery From Consultation to Completion",
     description:
       "From the first consultation to flawless installation, our team ensures every project is completed with precision and care.",
-    mainImage: "/hero-slider/3.jpg",
+    mainImage: "/project/p1/1.webp",
   },
   {
   subtitle: "Architectural Glass & Facades",
