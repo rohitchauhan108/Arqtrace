@@ -62,7 +62,7 @@ const LumaniSchucoContent = () => {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative min-h-[550px] lg:h-[650px] w-full bg-[#2d1e18] overflow-hidden flex items-center select-none">
+      <section className="relative min-h-137.5 lg:h-162.5 w-full bg-[#2d1e18] overflow-hidden flex items-center select-none">
         <div 
           className="absolute inset-0 opacity-100 scale-100 motion-safe:animate-[pulse_8s_ease-in-out_infinite]"
           style={{ 
@@ -71,7 +71,7 @@ const LumaniSchucoContent = () => {
             backgroundPosition: "center" 
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#2d1e18] via-[#2d1e18]/50 to-transparent" />
+        <div className="absolute inset-0 bg-linear-to-t from-[#2d1e18] via-[#2d1e18]/50 to-transparent" />
         <div className="container mx-auto px-6 lg:px-16 relative z-10 text-center">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
             <div className="flex items-center justify-center gap-2 mb-6 mt-40">
@@ -85,7 +85,7 @@ const LumaniSchucoContent = () => {
             <p className="text-stone-300 text-sm md:text-base mb-10 max-w-xl mx-auto leading-relaxed font-sans font-light">
               Lumani Schüco stands for exceptional craftsmanship and innovation in Aluminum Windows and Doors.
             </p>
-            <div className="w-[1px] h-12 bg-gradient-to-b from-[#bd845c] to-transparent mx-auto" />
+            <div className="w-px h-12 bg-linear-to-b from-[#bd845c] to-transparent mx-auto" />
           </motion.div>
         </div>
       </section>
@@ -108,7 +108,7 @@ const LumaniSchucoContent = () => {
               <div className="space-y-2">
                 <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c] block">Premium Aluminum Solutions</span>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] leading-[1.15] tracking-tight">
-                  Why Choose Lumani Schüco?
+                  Premium Aluminum Windows and Doors for Modern Spaces
                 </h2>
               </div>
               <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
@@ -164,7 +164,7 @@ const LumaniSchucoContent = () => {
                 >
                   {/* Media Frame Window */}
                   <div className={`lg:col-span-6 ${index % 2 === 1 ? 'lg:order-2' : ''} sticky top-6`}>
-                    <div className="aspect-[16/11] sm:aspect-[4/3] overflow-hidden border border-stone-200 p-2 bg-white shadow-md group">
+                    <div className="aspect-16/11 sm:aspect-4/3 overflow-hidden border border-stone-200 p-2 bg-white shadow-md group">
                       <div className="w-full h-full overflow-hidden relative">
                         <img 
                           src={product.image} 
@@ -275,11 +275,11 @@ const LumaniSchucoContent = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
             {APPLICATIONS.map((app) => (
               <div key={app.title} className="group bg-white flex flex-col h-full border border-stone-100 hover:border-stone-200 hover:shadow-xl transition-all duration-500">
-                <div className="aspect-[4/3] overflow-hidden bg-stone-100 relative">
+                <div className="aspect-4/3 overflow-hidden bg-stone-100 relative">
                   <img src={app.image} alt={app.title} className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-[#2d1e18]/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
-                <div className="p-8 flex-grow flex flex-col justify-between">
+                <div className="p-8 grow flex flex-col justify-between">
                   <div className="space-y-4">
                     <h3 className="text-lg font-serif font-bold text-[#2d1e18] group-hover:text-[#bd845c] transition-colors duration-300">
                       {app.title}
@@ -313,7 +313,7 @@ const LumaniSchucoContent = () => {
             {ADVANTAGES.map((adv, idx) => (
               <div 
                 key={idx} 
-                className="bg-white p-10 flex flex-col justify-between min-h-[200px] hover:bg-[#fbf9f4]/50 transition-colors duration-300 relative group"
+                className="bg-white p-10 flex flex-col justify-between min-h-50 hover:bg-[#fbf9f4]/50 transition-colors duration-300 relative group"
               >
                 <div className="space-y-4">
                   <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase">Feature // 0{idx + 1}</span>

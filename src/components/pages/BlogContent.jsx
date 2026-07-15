@@ -3,34 +3,16 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import { POSTS } from "@/lib/posts";
+import { useState } from "react";
 
 const BlogContent = () => {
-  const BLOG_POSTS = [
-    {
-      title: "Best Aluminium Windows in Dehradun for Modern Homes",
-      readTime: "2 min read",
-      category: "SCHUCO ALUMINUM WINDOWS",
-      image: "https://images.unsplash.com/photo-1600585152220-56d1d8cf4f1f?q=80&w=2070&auto=format&fit=crop",
-    },
-    {
-      title: "Why Schüco Windows are Essential for Dehradun",
-      readTime: "7 min read",
-      category: "SCHUCO ALUMINUM WINDOWS",
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2073&auto=format&fit=crop",
-    },
-    {
-      title: "The Arqtrace Lumani Schüco Advantage: Defining Excellence in Premium Window Systems",
-      readTime: "4 min read",
-      category: "SCHUCO ALUMINUM WINDOWS",
-      image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?q=80&w=1974&auto=format&fit=crop",
-    },
-    {
-      title: "Schüco Windows: Your Shield Against Dehradun’s Toughest Weather",
-      readTime: "3 min read",
-      category: "SCHUCO ALUMINUM WINDOWS",
-      image: "https://images.unsplash.com/photo-1600566753086-002672e4c993?q=80&w=2070&auto=format&fit=crop",
-    },
-  ];
+  const BLOG_POSTS = POSTS;
+  const perPage = 4;
+  const [page, setPage] = useState(1);
+  const totalPages = Math.ceil(BLOG_POSTS.length / perPage);
+  const start = (page - 1) * perPage;
+  const visiblePosts = BLOG_POSTS.slice(start, start + perPage);
 
   return (
     <>
@@ -58,7 +40,7 @@ const BlogContent = () => {
       <section className="py-20 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-12">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {BLOG_POSTS.map((post, index) => (
+            {visiblePosts.map((post, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -67,14 +49,19 @@ const BlogContent = () => {
                   className="group bg-[#fbf9f4] rounded-2xl overflow-hidden border border-stone-100 hover:shadow-xl transition-shadow"
                 >
                   <div className="aspect-[4/3] overflow-hidden">
-                    <img src={post.image} alt={post.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                    <img
+                      src={post.heroImage || (post.images && post.images[0])}
+                      alt={post.title}
+                      onError={(e) => (e.currentTarget.src = "https://picsum.photos/seed/default/800/600")}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    />
                   </div>
                   <div className="p-6">
                     <span className="text-xs font-bold uppercase tracking-wider text-[#bd845c] mb-2 block">{post.category}</span>
                     <h3 className="text-lg font-serif font-bold text-[#2d1e18] mb-3 group-hover:text-[#bd845c] transition-colors line-clamp-3">{post.title}</h3>
                     <div className="flex items-center justify-between mt-4">
                       <span className="text-stone-500 text-xs">{post.readTime}</span>
-                      <Link href="#" className="text-[#bd845c] font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
+                      <Link href={`/blog/${post.slug || ""}`} className="text-[#bd845c] font-bold text-sm flex items-center gap-2 hover:gap-3 transition-all">
                         Read More
                         <ArrowRight className="w-4 h-4" />
                       </Link>
@@ -84,12 +71,30 @@ const BlogContent = () => {
             ))}
           </div>
 
-          {/* Pagination Placeholder */}
+          {/* Pagination */}
           <div className="mt-16 flex justify-center items-center gap-3">
-            <button disabled className="px-5 py-2 rounded-lg bg-stone-100 text-stone-400 cursor-not-allowed text-sm font-medium">Previous</button>
-            <button className="px-5 py-2 rounded-lg bg-[#bd845c] text-white text-sm font-medium">1</button>
-            <button className="px-5 py-2 rounded-lg bg-stone-100 text-stone-600 hover:bg-stone-200 transition-colors text-sm font-medium">2</button>
-            <button className="px-5 py-2 rounded-lg bg-stone-100 text-stone-600 hover:bg-stone-200 transition-colors text-sm font-medium">Next</button>
+            <button
+              onClick={() => setPage((p) => Math.max(1, p - 1))}
+              disabled={page === 1}
+              className={`px-5 py-2 rounded-lg text-sm font-medium ${page === 1 ? 'bg-stone-100 text-stone-400 cursor-not-allowed' : 'bg-white text-stone-700 hover:bg-stone-50'}`}>
+              Previous
+            </button>
+
+            {Array.from({ length: totalPages }).map((_, i) => (
+              <button
+                key={i}
+                onClick={() => setPage(i + 1)}
+                className={`px-4 py-2 rounded-lg text-sm font-medium ${page === i + 1 ? 'bg-[#bd845c] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'}`}>
+                {i + 1}
+              </button>
+            ))}
+
+            <button
+              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+              disabled={page === totalPages}
+              className={`px-5 py-2 rounded-lg text-sm font-medium ${page === totalPages ? 'bg-stone-100 text-stone-400 cursor-not-allowed' : 'bg-white text-stone-700 hover:bg-stone-50'}`}>
+              Next
+            </button>
           </div>
         </div>
       </section>

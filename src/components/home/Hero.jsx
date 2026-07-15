@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Facebook, Twitter, Instagram, ArrowRight, Play, ArrowLeft } from "lucide-react";
+import { Facebook, Instagram, ArrowRight, Play, ArrowLeft } from "lucide-react";
 
 const SLIDES_DATA = [
   {
@@ -58,8 +58,7 @@ const Hero = () => {
   return (
     <section className="relative min-h-[750px] lg:h-[850px] w-full bg-[#fbf9f4] overflow-hidden flex items-center bg-repeat" style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
       <div className="absolute left-6 bottom-1/3 z-20 hidden md:flex flex-col gap-6 text-[#7c695c]">
-        <a href="https://www.facebook.com/profile.php?id=61553583790346" target="_blank" rel="noreferrer" className="hover:text-amber-700 transition-colors"><Facebook className="w-4 h-4" /></a>
-        <a href="https://twitter.com/arqtrace" target="_blank" rel="noreferrer" className="hover:text-amber-700 transition-colors"><Twitter className="w-4 h-4" /></a>
+        <a href="https://www.facebook.com/profile.php?id=61569129481661" target="_blank" rel="noreferrer" className="hover:text-amber-700 transition-colors"><Facebook className="w-4 h-4" /></a>
         <a href="https://www.instagram.com/arqtrace/" target="_blank" rel="noreferrer" className="hover:text-amber-700 transition-colors"><Instagram className="w-4 h-4" /></a>
         <span className="w-[1px] h-12 bg-[#7c695c]/30 mx-auto mt-2" />
       </div>

@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Twitter, Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -20,9 +20,9 @@ const Footer = () => {
 
             <div className="flex items-center gap-4 pt-2">
               {[
-                { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61553583790346" },
-                { Icon: Twitter, href: "https://twitter.com/arqtrace" },
+                { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61569129481661" },
                 { Icon: Instagram, href: "https://www.instagram.com/arqtrace/" },
+                { Icon: Twitter, href: "https://x.com/arqtrace" },
                 { Icon: Linkedin, href: "https://www.linkedin.com/company/arqtrace-pvt-ltd/about/?viewAsMember=true" },
               ].map(({ Icon, href }, idx) => (
                 <a key={idx} href={href} target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-[#bd845c] hover:border-[#bd845c] transition-all duration-500 shadow-lg group">
@@ -33,22 +33,22 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-2">
-            <h4 className="text-base font-serif font-bold uppercase tracking-[0.15em] !text-white mb-10 flex items-center gap-3">
+            <h4 className="text-base font-serif font-bold uppercase tracking-[0.15em] text-white mb-10 flex items-center gap-3">
               Quick Links
               <span className="w-1.5 h-1.5 bg-[#bd845c] rounded-full" />
             </h4>
-            <ul className="space-y-5 text-sm !text-white font-sans">
+            <ul className="space-y-5 text-sm text-white font-sans">
               {[
-                { label: "About Us", href: "#about" },
-                { label: "Our Services", href: "#services" },
-                { label: "Latest Projects", href: "#projects" },
-                { label: "Why Arqtrace", href: "#why-choose" },
-                { label: "Latest News", href: "#blog" },
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
+                { label: "Brands", href: "/brands" },
+                { label: "Blog", href: "/blog" },
+                { label: "Contact", href: "/contact" },
               ].map((link, idx) => (
                 <li key={idx}>
                   <Link href={link.href} className="hover:text-[#bd845c] flex items-center gap-0 hover:gap-2 transition-all duration-300 group">
                     <ArrowRight className="w-0 h-3.5 text-[#bd845c] opacity-0 group-hover:w-4 group-hover:opacity-100 transition-all duration-300" />
-                    <span className="!text-white group-hover:!text-[#bd845c] transition-colors">{link.label}</span>
+                    <span className="text-white group-hover:text-[#bd845c] transition-colors">{link.label}</span>
                   </Link>
                 </li>
               ))}
@@ -56,62 +56,60 @@ const Footer = () => {
           </div>
 
           <div className="lg:col-span-3">
-            <h4 className="text-base font-serif font-bold uppercase tracking-[0.15em] !text-white mb-10 flex items-center gap-3">
+            <h4 className="text-base font-serif font-bold uppercase tracking-[0.15em] text-white mb-10 flex items-center gap-3">
               Our Systems
               <span className="w-1.5 h-1.5 bg-[#bd845c] rounded-full" />
             </h4>
-            <ul className="space-y-5 text-sm !text-white font-sans">
+            <ul className="space-y-5 text-sm text-white font-sans">
               {[
-                "Premium Aluminum Windows",
-                "uPVC Doors & Windows",
-                "Partitions & Glazing",
-                "Outdoor Furniture",
-                "Professional Installation",
+                { label: "Lumani Schuco", href: "/lumani-schuco" },
+                { label: "Aluminium Windows and Doors", href: "/lumani-schuco-aluminium-windows" },
+                { label: "Winda", href: "/winda" },
+                { label: "uPVC Windows and Doors", href: "/winda-upvc-windows" },
+                { label: "GEBE Outdoor Furniture", href: "/gebe" },
               ].map((service, idx) => (
-                <li key={idx} className="hover:text-[#bd845c] transition-colors duration-300 cursor-pointer flex items-center gap-3 group">
-                  <span className="w-1.5 h-[1px] bg-[#bd845c] group-hover:w-3 transition-all" />
-                  <span className="!text-white group-hover:!text-[#bd845c] transition-colors">{service}</span>
+                <li key={idx} className="flex items-center gap-3 group">
+                  <span className="w-1.5 h-px bg-[#bd845c] group-hover:w-3 transition-all" />
+                  <Link href={service.href} className="text-white group-hover:text-[#bd845c] transition-colors">
+                    {service.label}
+                  </Link>
                 </li>
               ))}
             </ul>
           </div>
 
           <div className="lg:col-span-3">
-            <h4 className="text-base font-serif font-bold uppercase tracking-[0.15em] !text-white mb-10 flex items-center gap-3">
+            <h4 className="text-base font-serif font-bold uppercase tracking-[0.15em] text-white mb-10 flex items-center gap-3">
               Contact Info
               <span className="w-1.5 h-1.5 bg-[#bd845c] rounded-full" />
             </h4>
-            <ul className="space-y-6 text-sm !text-white font-sans">
+            <ul className="space-y-6 text-sm text-white font-sans">
               <li className="flex items-start gap-4 group">
                 <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#bd845c] transition-colors duration-300">
                   <MapPin className="w-4 h-4 text-[#bd845c] group-hover:text-white transition-colors" />
                 </div>
-                <span className="leading-relaxed pt-1 !text-white group-hover:!text-white transition-colors">First Floor, Durga Tower,<br />GMS Road, Dehradun-248001, Uttarakhand</span>
+                <span className="leading-relaxed pt-1 text-white transition-colors">First Floor, Durga Tower,<br />GMS Road, Dehradun-248001, Uttarakhand</span>
               </li>
               <li className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#bd845c] transition-colors duration-300">
                   <Phone className="w-4 h-4 text-[#bd845c] group-hover:text-white transition-colors" />
                 </div>
-                <span className="font-medium !text-white group-hover:!text-white transition-colors">+91 788 886 4955</span>
+                <a href="tel:+917888864955" className="font-medium text-white transition-colors">+91 788 886 4955</a>
               </li>
               <li className="flex items-center gap-4 group">
                 <div className="w-10 h-10 rounded bg-white/5 flex items-center justify-center shrink-0 group-hover:bg-[#bd845c] transition-colors duration-300">
                   <Mail className="w-4 h-4 text-[#bd845c] group-hover:text-white transition-colors" />
                 </div>
-                <span className="truncate !text-white group-hover:!text-white transition-colors">info@arqtrace.com</span>
+                <a href="mailto:info@arqtrace.com" className="truncate text-white transition-colors">info@arqtrace.com</a>
               </li>
             </ul>
           </div>
         </div>
 
-        <div className="pt-8 flex flex-col md:flex-row justify-between items-center gap-6 text-xs font-medium uppercase tracking-[0.1em] text-stone-500 font-sans">
+        <div className="pt-8 flex items-center justify-center text-xs font-medium uppercase tracking-widest text-stone-500 font-sans">
           <p className="text-center md:text-left">
             © {new Date().getFullYear()} <span className="text-stone-300">Arqtrace</span>. Crafted with precision.
           </p>
-          <div className="flex gap-8">
-            <Link href="#" className="hover:text-[#bd845c] transition-colors duration-300">Privacy Policy</Link>
-            <Link href="#" className="hover:text-[#bd845c] transition-colors duration-300">Terms of Service</Link>
-          </div>
         </div>
       </div>
     </footer>
