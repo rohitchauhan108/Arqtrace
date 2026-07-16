@@ -73,7 +73,7 @@ const Header = () => {
         </div>
       </div>
 
-      <nav className={cn("w-full bg-white transition-all duration-300 py-4 lg:py-0 border-b border-stone-100", isSticky ? "fixed top-0 left-0 shadow-md z-50 animate-slideDown" : "relative")}>
+      <nav className={cn("w-full bg-white transition-all duration-300 sm:py-2 md:py-4 lg:py-0 border-b border-stone-100", isSticky ? "fixed top-0 left-0 shadow-md z-50 animate-slideDown" : "relative")}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="flex items-center py-4">
             <img src="/logo.png" alt="Arqtrace Logo" className="h-10 md:h-18 w-auto object-contain" />

@@ -10,7 +10,7 @@ const BlogContent = () => {
   const BLOG_POSTS = POSTS;
   const perPage = 4;
   const [page, setPage] = useState(1);
-  const totalPages = Math.ceil(BLOG_POSTS.length / perPage);
+  const totalPages = Math.ceil(BLOG_POSTS.length / perPage) || 1;
   const start = (page - 1) * perPage;
   const visiblePosts = BLOG_POSTS.slice(start, start + perPage);
 
@@ -27,7 +27,7 @@ const BlogContent = () => {
               <span className="w-3 h-3 bg-[#bd845c] inline-block" />
             </div>
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-white mb-6 leading-[1.15]">
-              Architectural <br></br> Trends & Insights
+              Architectural <br /> Trends & Insights
             </h1>
             <p className="text-white/80 text-sm md:text-base mb-8 max-w-2xl mx-auto leading-relaxed">
               Explore our latest articles on premium windows, doors, outdoor furniture, and architectural trends in Uttarakhand.
@@ -39,8 +39,9 @@ const BlogContent = () => {
       {/* Blog Grid */}
       <section className="py-20 lg:py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-12">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {visiblePosts.map((post, index) => (
+          {visiblePosts.length > 0 ? (
+            <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+              {visiblePosts.map((post, index) => (
                 <motion.div
                   key={index}
                   initial={{ opacity: 0, y: 20 }}
@@ -68,34 +69,42 @@ const BlogContent = () => {
                     </div>
                   </div>
                 </motion.div>
-            ))}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <div className="text-center py-20">
+              <h2 className="text-2xl font-serif font-bold text-[#2d1e18] mb-4">No blog posts yet</h2>
+              <p className="text-stone-500">Check back later for new content!</p>
+            </div>
+          )}
 
           {/* Pagination */}
-          <div className="mt-16 flex justify-center items-center gap-3">
-            <button
-              onClick={() => setPage((p) => Math.max(1, p - 1))}
-              disabled={page === 1}
-              className={`px-5 py-2 rounded-lg text-sm font-medium ${page === 1 ? 'bg-stone-100 text-stone-400 cursor-not-allowed' : 'bg-white text-stone-700 hover:bg-stone-50'}`}>
-              Previous
-            </button>
-
-            {Array.from({ length: totalPages }).map((_, i) => (
+          {visiblePosts.length > 0 && (
+            <div className="mt-16 flex justify-center items-center gap-3">
               <button
-                key={i}
-                onClick={() => setPage(i + 1)}
-                className={`px-4 py-2 rounded-lg text-sm font-medium ${page === i + 1 ? 'bg-[#bd845c] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'}`}>
-                {i + 1}
+                onClick={() => setPage((p) => Math.max(1, p - 1))}
+                disabled={page === 1}
+                className={`px-5 py-2 rounded-lg text-sm font-medium ${page === 1 ? 'bg-stone-100 text-stone-400 cursor-not-allowed' : 'bg-white text-stone-700 hover:bg-stone-50'}`}>
+                Previous
               </button>
-            ))}
 
-            <button
-              onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
-              disabled={page === totalPages}
-              className={`px-5 py-2 rounded-lg text-sm font-medium ${page === totalPages ? 'bg-stone-100 text-stone-400 cursor-not-allowed' : 'bg-white text-stone-700 hover:bg-stone-50'}`}>
-              Next
-            </button>
-          </div>
+              {Array.from({ length: totalPages }).map((_, i) => (
+                <button
+                  key={i}
+                  onClick={() => setPage(i + 1)}
+                  className={`px-4 py-2 rounded-lg text-sm font-medium ${page === i + 1 ? 'bg-[#bd845c] text-white' : 'bg-stone-100 text-stone-600 hover:bg-stone-200'}`}>
+                  {i + 1}
+                </button>
+              ))}
+
+              <button
+                onClick={() => setPage((p) => Math.min(totalPages, p + 1))}
+                disabled={page === totalPages}
+                className={`px-5 py-2 rounded-lg text-sm font-medium ${page === totalPages ? 'bg-stone-100 text-stone-400 cursor-not-allowed' : 'bg-white text-stone-700 hover:bg-stone-50'}`}>
+                Next
+              </button>
+            </div>
+          )}
         </div>
       </section>
     </>
