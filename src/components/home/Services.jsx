@@ -18,7 +18,7 @@ const services = [
   },
   {
     icon: <ShieldAlert className="w-10 h-10 stroke-[1.2]" />,
-    title: "Partitions & Glazing",
+    title: "Internal Partitions",
     description: "Contemporary partition solutions and glass systems tailored to create bright, open, and functional interiors.",
     image: "/about-section/3.jpg",
   },

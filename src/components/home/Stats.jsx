@@ -1,31 +1,25 @@
 "use client";
 
-import { Users, Briefcase, Trophy, ShieldCheck } from "lucide-react";
+import { Users, Briefcase, Trophy } from "lucide-react";
 
 const statItems = [
   {
     icon: <Users className="w-6 h-6 stroke-[1.5]" />,
-    count: "13+",
+    count: "14+",
     label: "Years of Combined Expertise",
     bgWatermark: "Expertise",
   },
   {
     icon: <Briefcase className="w-6 h-6 stroke-[1.5]" />,
-    count: "100+",
+    count: "600+",
     label: "Projects Delivered",
     bgWatermark: "Projects",
   },
   {
     icon: <Trophy className="w-6 h-6 stroke-[1.5]" />,
-    count: "21Y",
+    count: "10Y",
     label: "Warranty on Select Products",
     bgWatermark: "Warranty",
-  },
-  {
-    icon: <ShieldCheck className="w-6 h-6 stroke-[1.5]" />,
-    count: "4",
-    label: "Premium Brands Partnered",
-    bgWatermark: "Brands",
   },
 ];
 
@@ -33,7 +27,7 @@ const Stats = () => {
   return (
     <section className="relative py-20 lg:py-24 overflow-hidden select-none bg-[#221510]">
       <div className="container mx-auto px-6 lg:px-16 relative z-10">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8 items-center text-center">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-8 items-center text-center">
           {statItems.map((item, idx) => (
             <div key={idx} className="relative flex flex-col items-center group cursor-default py-4">
               

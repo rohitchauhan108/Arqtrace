@@ -7,7 +7,6 @@ import Stats from "@/components/home/Stats";
 import Projects from "@/components/home/Projects";
 import Shop from "@/components/home/Shop";
 import Testimonials from "@/components/home/Testimonials";
-import Blog from "@/components/home/Blog";
 import WhyChoose from "@/components/home/Whychooseus";
 
 export default function Home() {
@@ -21,7 +20,6 @@ export default function Home() {
       <WhyChoose />
       {/* <Shop /> */}
       <Testimonials />
-      <Blog />
     </main>
   );
 }

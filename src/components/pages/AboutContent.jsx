@@ -33,9 +33,7 @@ const AboutContent = () => {
               Discover the Arqtrace Difference
             </h1>
             
-            <p className="text-white/70 text-sm md:text-base mb-0 max-w-2xl mx-auto leading-relaxed font-sans">
-              Arqtrace is an all-in-one solution for premium aluminum and uPVC windows, doors, partitions, and outdoor furniture.
-            </p>
+            
           </motion.div>
         </div>
       </section>
@@ -70,32 +68,33 @@ const AboutContent = () => {
                   <span className="w-1.5 h-1.5 bg-[#bd845c]" />
                 </div>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] leading-[1.15] tracking-tight">
-                  Arqtrace: In Brief
+                  Our Story, Our Vision
                 </h2>
               </div>
 
-              <p className="text-stone-500 text-sm md:text-base leading-relaxed max-w-xl font-sans">
-                Arqtrace is an all-in-one solution for premium aluminum and uPVC windows, doors, partitions, and outdoor furniture. We strive to bring you nothing but the best quality of products for your everlasting home or your upcoming project.
-              </p>
+              <div className="space-y-4 max-w-xl">
+                <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
+                  Arqtrace is a growing design-and-build partner for premium architectural solutions, bringing together expertise in aluminium, uPVC, partitions, and outdoor living. Our journey is shaped by a simple belief: every space deserves products that are beautiful, durable, and thoughtfully crafted.
+                </p>
 
-              {/* 2x2 Feature Core Matrices */}
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-xl border-t border-stone-100 pt-8">
-                {[
-                  { Icon: CheckCircle, title: "Unmatched Quality", desc: "Premium aluminum windows, doors, uPVC solutions, and outdoor furniture built for durability and elegance." },
-                  { Icon: Users, title: "Trusted Premium Brands", desc: "Official dealer of Lumani, SCHUCO, Winda, and Gebe with deep industry experience." },
-                  { Icon: Shield, title: "Expert Guidance", desc: "Professional consultation and seamless installation for a hassle-free experience." },
-                  { Icon: Award, title: "Reliable Warranties", desc: "Up to 21 years of warranty on select products for lasting peace of mind." }
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-start gap-4">
-                    <div className="w-11 h-11 rounded-full bg-stone-50 border border-stone-200/60 flex items-center justify-center text-[#bd845c] shrink-0">
-                      <item.Icon className="w-4 h-4 stroke-[1.5]" />
-                    </div>
-                    <div>
-                      <h4 className="text-[#2d1e18] font-serif font-bold text-sm mb-0.5">{item.title}</h4>
-                      <p className="text-stone-400 text-xs leading-normal font-sans">{item.desc}</p>
-                    </div>
-                  </div>
-                ))}
+                <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
+                  We are proud to bring together three specialized identities under one vision — Lumani Schuco for aluminium doors and windows, Winda for uPVC solutions, and Gebe for outdoor furniture. Together, they allow us to offer complete solutions for modern homes, villas, offices, and hospitality spaces with quality, innovation, and long-term value.
+                </p>
+
+                <ul className="space-y-2 text-sm md:text-base text-stone-500 leading-relaxed font-sans">
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#bd845c] mt-1">•</span>
+                    <span>Premium aluminium and uPVC windows, doors, and partitions for contemporary spaces.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#bd845c] mt-1">•</span>
+                    <span>Elegant outdoor furniture designed for comfort, durability, and lifestyle living.</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-[#bd845c] mt-1">•</span>
+                    <span>Expert guidance and professional installation backed by dependable quality standards.</span>
+                  </li>
+                </ul>
               </div>
 
               <div className="pt-2">
@@ -133,7 +132,7 @@ const AboutContent = () => {
         <span className="w-1.5 h-1.5 bg-[#bd845c]" />
       </div>
       <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] tracking-tight max-w-2xl">
-        Why Choose ARQTRACE?
+        How Arqtrace Works
       </h2>
     </div>
 
@@ -183,10 +182,10 @@ const AboutContent = () => {
         </div>
         <div className="mt-8 space-y-2 max-w-[240px]">
           <h3 className="text-lg font-serif font-bold text-[#2d1e18] transition-colors duration-300 group-hover:text-[#bd845c]">
-            Trusted Dealer of Premium Brands
+            Proven Expertise & Heritage
           </h3>
           <p className="text-stone-500 text-xs font-sans leading-relaxed">
-            Arqtrace is the official dealer of Lumani, SCHUCO, Winda, and Gebe, delivering premium products backed by innovation and experience.
+            13+ years of combined experience, 600+ projects delivered. Arqtrace operates Lumani Schuco, Winda, and Gebe—complete solutions across aluminium, uPVC, partitions, and outdoor spaces.
           </p>
         </div>
         <div className="hidden lg:block absolute top-24 -right-1/4 w-1/2 h-[1px] border-t border-dashed border-stone-300/80 pointer-events-none z-0" />
@@ -238,7 +237,7 @@ const AboutContent = () => {
             Long-Term Reliability
           </h3>
           <p className="text-stone-500 text-xs font-sans leading-relaxed">
-            With up to 21 years of warranty on select products, we guarantee solutions that stand the test of time.
+            With up to 10 years of warranty on select products, we guarantee solutions that stand the test of time.
           </p>
         </div>
       </div>
@@ -269,7 +268,7 @@ const AboutContent = () => {
               {/* Years Experience Geometric Overlay Card Box */}
               <div className="absolute bottom-16 -left-6 bg-[#bd845c] p-6 text-white shadow-2xl flex items-center gap-4 border border-white/10 z-20 transition-transform duration-500 hover:scale-105">
                 <h2 className="text-4xl md:text-5xl font-serif font-black tracking-tight leading-none border-r border-white/20 pr-4">
-                  13+
+                  14+
                 </h2>
                 <div className="text-[10px] font-sans font-bold uppercase tracking-[0.25em] leading-tight max-w-[85px] text-white/90">
                   Years Of Combined Experience
@@ -309,7 +308,7 @@ const AboutContent = () => {
                     Warranty
                   </span>
                   <div className="text-4xl font-serif font-bold text-[#2d1e18] tracking-tight">
-                    21Y
+                    10Y
                   </div>
                 </div>
               </div>
@@ -337,13 +336,16 @@ const AboutContent = () => {
       <div className="flex items-center gap-2">
         <span className="w-1.5 h-1.5 bg-[#bd845c]" />
         <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c]">
-          Our Partners
+          Our Projects
         </span>
         <span className="w-1.5 h-1.5 bg-[#bd845c]" />
       </div>
-      <h2 className="text-3xl sm:text-4xl font-serif font-bold text-[#2d1e18] tracking-tight">
-        Trusted by Leading Brands
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-serif font-bold text-[#2d1e18] tracking-tight">
+        Trusted by Leading Clients
       </h2>
+      <p className="text-stone-500 text-base font-sans max-w-2xl mt-2">
+        From hospitality to commercial spaces, Arqtrace delivers premium solutions for India's most trusted brands.
+      </p>
     </div>
   </div>
 
@@ -354,11 +356,11 @@ const AboutContent = () => {
     <div className="absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-[#fbf9f4] to-transparent z-10 pointer-events-none" />
 
     {/* Marquee Track 1 */}
-    <div className="flex gap-12 items-center shrink-0 animate-[marquee_25s_linear_infinite] whitespace-nowrap px-6">
+    <div className="flex gap-16 items-center shrink-0 animate-[marquee_25s_linear_infinite] whitespace-nowrap px-6">
       {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((num, idx) => (
         <div 
           key={`track1-${idx}`} 
-          className="w-56 lg:w-64 h-24 flex items-center justify-center p-4 opacity-100 hover:opacity-100 transition-all duration-300 mx-6"
+          className="w-72 lg:w-80 h-36 flex items-center justify-center p-6 mx-6 bg-white rounded-lg shadow-md border border-stone-100"
         >
           <img
             src={`/about-section/logo${num}.png`}
@@ -370,16 +372,16 @@ const AboutContent = () => {
     </div>
 
     {/* Marquee Track 2 (Cloned for gapless continuation) */}
-    <div className="flex gap-12 items-center shrink-0 animate-[marquee_25s_linear_infinite] whitespace-nowrap px-6" aria-hidden="true">
+    <div className="flex gap-16 items-center shrink-0 animate-[marquee_25s_linear_infinite] whitespace-nowrap px-6" aria-hidden="true">
       {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((num, idx) => (
         <div 
           key={`track2-${idx}`} 
-          className="w-56 lg:w-64 h-24 flex items-center justify-center p-4 opacity-90 hover:opacity-100 transition-all duration-300 mx-6"
+          className="w-72 lg:w-80 h-36 flex items-center justify-center p-6 mx-6 bg-white rounded-lg shadow-md border border-stone-100"
         >
           <img
             src={`/about-section/logo${num}.png`}
             alt={`Partner Logo Cloned ${num}`}
-            className="max-w-full max-h-full object-cover"
+            className="max-w-full max-h-full object-contain"
           />
         </div>
       ))}
@@ -388,8 +390,8 @@ const AboutContent = () => {
 
   {/* Description Text Footer */}
   <div className="container mx-auto px-6 lg:px-16 relative z-10 mt-16 text-center">
-    <p className="text-stone-500 text-sm font-sans leading-relaxed max-w-2xl mx-auto">
-      Innovation with a combined experience of 13 years, Arqtrace exclusively provides Lumani Schüco, Winda and Gebe products tailor made with innovation for ultimate customer satisfaction.
+    <p className="text-stone-600 text-base font-sans leading-relaxed max-w-3xl mx-auto">
+      With proven expertise across luxury hospitality, commercial spaces, and residential projects, Arqtrace partners with prestigious brands to bring premium architecture to life.
     </p>
   </div>
 

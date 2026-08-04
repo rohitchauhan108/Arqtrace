@@ -17,21 +17,21 @@ const SLIDES_DATA = [
     subtitle: "Trusted Premium Brands",
     title: "Luxury Products Backed by Expert Guidance",
     description:
-      "We are the trusted dealer of Lumani, SCHUCO, Winda, and Gebe solutions, offering innovation that elevates comfort, style, and durability.",
+      "Discover premium aluminium windows, doors, and façade systems from globally trusted brands. At Arqtrace, we combine expert consultation with world-class solutions to create elegant, secure, and high-performance spaces.",
     mainImage: "/project/p1/5.webp",
   },
   {
     subtitle: "Seamless Installation",
-    title: "Professional Delivery From Consultation to Completion",
+    title: "Professional Installation and Completion.",
     description:
-      "From the first consultation to flawless installation, our team ensures every project is completed with precision and care.",
+  "Our experienced team of B.Tech and Civil Engineers ensures precise installation, flawless execution, and reliable after-sales support, delivering excellence at every stage of your project.",
     mainImage: "/project/p1/1.webp",
   },
   {
-  subtitle: "Architectural Glass & Facades",
-  title: "Elegant Glass Systems That Transform Every Space",
+  subtitle: "Architectural Aluminum & Facades",
+  title: "Elegant Window Systems That Transform Every Space",
   description:
-    "Create brighter, more sophisticated interiors with premium glass facades, office partitions, railings, and structural glazing solutions engineered for strength, aesthetics, and lasting performance.",
+    "Create brighter, more sophisticated interiors with premium aluminium facades, sliding windows and structural glazing solutions engineered for strength, aesthetics, and lasting performance.",
   mainImage: "/about-section/1.jpg",
 },
 {
