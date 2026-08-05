@@ -6,19 +6,20 @@ import { Button } from "@/components/ui/Button";
 
 const projects = [
   {
-    title: "Luxury Aluminum Sliding Doors",
-    category: "Premium Entryways",
-    image: "/project/p1/7.webp",
+    title: "Hayar Centric",
+    category: "Premium Windows",
+    image: "/project/hayat.webp",
   },
   {
-    title: "Contemporary uPVC Window Systems",
-    category: "Energy-Efficient Living",
-    image: "/project/p2/6.webp",
+    title: "Lemon-Tree",
+    // category: "Energy-Efficient Living",
+    category: "Contemporary uPVC Window Systems",
+    image: "/testimonial/puneet-sharma.webp",
   },
   {
-    title: "Glass Partitions for Modern Offices",
-    category: "Interior Glazing",
-    image: "/images/10.webp",
+    title: "Residence of Mr. Naman Gupta",
+    category: "Aluminum Doors",
+    image: "/testimonial/naman-gupta.webp",
   },
   {
     title: "Outdoor Furniture Collections",
@@ -87,9 +88,6 @@ const Projects = () => {
               </div>
 
               <div className="absolute bottom-4 left-4 right-4 bg-white px-5 py-4 shadow-lg transition-all duration-500 group-hover:bg-[#2d1e18] z-10">
-                <span className="block text-[10px] font-bold uppercase tracking-widest text-[#bd845c] mb-1 !group-hover:text-white transition-colors duration-500">
-                  {project.category}
-                </span>
                 <p className="text-sm md:text-base font-serif font-bold text-[#2d1e18] truncate transition-colors duration-500 group-hover:text-white">
                   {project.title}
                 </p>

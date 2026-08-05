@@ -43,14 +43,14 @@ const LumaniSchucoContent = () => {
       id: "door-prem",
       title: "Premium Aluminum Doors", 
       desc: "Lumani Schüco doors are the perfect blend of strength, style, and security—crafted to complement both modern and traditional spaces. As part of our premium range of Aluminum Windows and Doors, they offer exceptional durability and a sleek finish. Trusted among leading Aluminum Door manufacturers, Lumani Schüco designs feature robust construction and advanced locking systems, with customization options to suit any architectural vision.", 
-      image: "/project/p2/1.webp",
+      image: "/home/window-door.webp",
       specs: { profile: "90mm Depth", insulation: "Ud up to 0.80 W/(m²K)", glass: "Integrated Smart Security", resistance: "RC2 / RC3 Certified" }
     },
     { 
       id: "glass-comb",
       title: "Aluminum and Glass Windows", 
       desc: "Lumani Schüco’s sleek Aluminum Windows and Doors bring a perfect mix of elegance and functionality to any setting. With double and triple glazing options, they offer excellent insulation to help lower energy bills. The UV-resistant glass protects interiors from sun damage while keeping spaces comfortable year-round. Recognized among top Aluminum window manufacturers, Lumani Schüco delivers contemporary designs that enhance both residential and commercial environments.", 
-      image: "/images/2.webp",
+      image: "/lumani/pre-window.webp",
       specs: { profile: "65mm Slimline", insulation: "Uf up to 1.1 W/(m²K)", glass: "UV-Shield Acoustic Laminate", resistance: "Class E900 Water Tightness" }
     },
   ];

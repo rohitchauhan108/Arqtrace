@@ -14,19 +14,19 @@ const services = [
     icon: <Layout className="w-10 h-10 stroke-[1.2]" />,
     title: "UPVC Windows & Doors",
     description: "Energy-efficient and low-maintenance products that bring comfort, insulation, and elegance to every project.",
-    image: "/home/4.webp",
+    image: "/home/window-door.webp",
   },
   {
     icon: <ShieldAlert className="w-10 h-10 stroke-[1.2]" />,
     title: "Internal Partitions",
     description: "Contemporary partition solutions and glass systems tailored to create bright, open, and functional interiors.",
-    image: "/about-section/3.jpg",
+    image: "/home/partition.webp",
   },
   {
     icon: <Sofa className="w-10 h-10 stroke-[1.2]" />,
     title: "Outdoor Furniture",
     description: "Premium outdoor furniture pieces that merge comfort and craftsmanship for elegant terrace, garden, and hospitality spaces.",
-    image: "/home/5.webp",
+    image: "/home/7.webp",
   },
 ];
 
