@@ -64,7 +64,7 @@ const Hero = () => {
       </div>
 
       <div className="container mx-auto px-6 lg:px-16 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10 py-16 lg:py-0">
-        <div className="lg:col-span-6 flex flex-col justify-center min-h-[380px]">
+        <div className="lg:col-span-6 flex flex-col justify-center min-h-[380px] pt-20">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIdx}
