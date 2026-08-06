@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
-import { ArrowRight, CheckCircle, Users, Clock, ShieldCheck, Sliders, Layers, Eye } from "lucide-react";
+import { ArrowRight, CheckCircle, Users, Clock, ShieldCheck, Layers, Eye } from "lucide-react";
 import Link from "next/link";
 
 const LumaniSchucoContent = () => {
@@ -212,43 +212,15 @@ const LumaniSchucoContent = () => {
                         >
                           <Eye className="w-3 h-3" /> Overview
                         </button>
-                        <button 
-                          onClick={() => toggleSpecTab(product.id, "specs")}
-                          className={`px-3 py-1 text-[10px] uppercase font-sans font-bold tracking-wider transition-all flex items-center gap-1.5 ${currentTab === 'specs' ? 'bg-[#bd845c] text-white shadow-xs' : 'text-stone-600 hover:text-[#2d1e18]'}`}
-                        >
-                          <Sliders className="w-3 h-3" /> Technical Datasheet
-                        </button>
                       </div>
                     </div>
 
                     <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#2d1e18] tracking-tight">{product.title}</h3>
                     
-                    {currentTab === "overview" ? (
+                    {currentTab === "overview" && (
                       <p className="text-stone-500 text-sm md:text-base font-sans leading-relaxed transition-all duration-300">
                         {product.desc}
                       </p>
-                    ) : (
-                      <div className="space-y-4 pt-2 transition-all duration-300">
-                        <p className="text-stone-500 text-sm font-sans italic">Showing precise performance measurements certified under architectural glass & profile safety norms.</p>
-                        <div className="bg-white border border-stone-200/80 p-4 space-y-2 font-sans text-xs text-[#2d1e18]">
-                          <div className="flex justify-between py-1.5 border-b border-stone-50">
-                            <span className="text-stone-400 font-medium">System Dimension Frame</span>
-                            <span className="font-bold">{product.specs.profile}</span>
-                          </div>
-                          <div className="flex justify-between py-1.5 border-b border-stone-50">
-                            <span className="text-stone-400 font-medium">Thermal Performance Metric</span>
-                            <span className="font-bold">{product.specs.insulation}</span>
-                          </div>
-                          <div className="flex justify-between py-1.5 border-b border-stone-50">
-                            <span className="text-stone-400 font-medium">Max Glass Capacity</span>
-                            <span className="font-bold">{product.specs.glass}</span>
-                          </div>
-                          <div className="flex justify-between py-1.5">
-                            <span className="text-stone-400 font-medium">Wind/Water Structural Class</span>
-                            <span className="font-bold">{product.specs.resistance}</span>
-                          </div>
-                        </div>
-                      </div>
                     )}
                   </div>
                 </div>
@@ -327,8 +299,6 @@ const LumaniSchucoContent = () => {
           </div>
         </div>
       </section>
-
-    
     </>
   );
 };

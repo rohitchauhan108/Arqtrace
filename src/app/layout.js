@@ -4,7 +4,7 @@ import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/ui/SmoothScroll";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
-import FloatingActions from "@/components/ui/FloatingActions";
+import FloatingIcons from "@/components/home/FloatingIcons";
 
 const plusJakartaSans = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -29,6 +29,7 @@ export default function RootLayout({ children }) {
         <Header />
         {/* <FloatingActions /> */}
         <SmoothScroll>
+          <FloatingIcons/>
           {children}
           <Footer />
         </SmoothScroll>
