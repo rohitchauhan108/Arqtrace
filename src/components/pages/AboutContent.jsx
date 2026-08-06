@@ -1,8 +1,9 @@
 "use client";
 
 import { Button } from "@/components/ui/Button";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, CheckCircle, Users, Award, Link } from "lucide-react";
+import { ArrowRight, Shield, CheckCircle, Users, Award } from "lucide-react";
 
 const AboutContent = () => {
   return (
@@ -235,7 +236,7 @@ const AboutContent = () => {
                 <div className="w-full h-full rounded-full overflow-hidden relative">
                   <div className="absolute inset-0 bg-[#2d1e18]/20 group-hover:bg-transparent transition-all duration-500 z-10" />
                   <img
-                    src="/images/4.webp"
+                    src="/images/1.webp"
                     alt="Precision Engineering"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
@@ -418,7 +419,10 @@ const AboutContent = () => {
           <div className="absolute inset-y-0 right-0 w-16 lg:w-32 bg-gradient-to-l from-[#fbf9f4] to-transparent z-10 pointer-events-none" />
 
           {/* Marquee Track 1 */}
-          <div className="flex gap-16 items-center shrink-0 animate-[marquee_25s_linear_infinite] whitespace-nowrap px-6">
+          <div
+            className="flex gap-16 items-center shrink-0 whitespace-nowrap px-6"
+            style={{ animation: "marquee 25s linear infinite", willChange: "transform" }}
+          >
             {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((num, idx) => (
               <div
                 key={`track1-${idx}`}
@@ -435,7 +439,8 @@ const AboutContent = () => {
 
           {/* Marquee Track 2 (Cloned for gapless continuation) */}
           <div
-            className="flex gap-16 items-center shrink-0 animate-[marquee_25s_linear_infinite] whitespace-nowrap px-6"
+            className="flex gap-16 items-center shrink-0 whitespace-nowrap px-6"
+            style={{ animation: "marquee 25s linear infinite", willChange: "transform" }}
             aria-hidden="true"
           >
             {[1, 2, 3, 4, 5, 1, 2, 3, 4, 5].map((num, idx) => (

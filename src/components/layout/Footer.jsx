@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { Facebook, Instagram, Twitter, Linkedin, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import { Facebook, Instagram, Linkedin, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -22,7 +22,6 @@ const Footer = () => {
               {[
                 { Icon: Facebook, href: "https://www.facebook.com/profile.php?id=61569129481661" },
                 { Icon: Instagram, href: "https://www.instagram.com/arqtrace/" },
-                { Icon: Twitter, href: "https://x.com/arqtrace" },
                 { Icon: Linkedin, href: "https://www.linkedin.com/company/arqtrace-pvt-ltd/about/?viewAsMember=true" },
               ].map(({ Icon, href }, idx) => (
                 <a key={idx} href={href} target="_blank" rel="noreferrer" className="w-11 h-11 rounded-full border border-white/10 bg-white/5 flex items-center justify-center text-white hover:bg-[#bd845c] hover:border-[#bd845c] transition-all duration-500 shadow-lg group">

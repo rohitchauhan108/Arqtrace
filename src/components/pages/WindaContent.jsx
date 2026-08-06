@@ -15,7 +15,7 @@ const WindaContent = () => {
         "Advanced noise reduction creates a peaceful environment.",
         "Low-maintenance materials guarantee long-lasting durability.",
       ],
-      image: "/project/p1/4.webp",
+      image: "/winda/1.webp",
     },
     {
       title: "Premium uPVC Doors and Windows",
@@ -25,7 +25,7 @@ const WindaContent = () => {
         "Secure multi-point locking systems provide enhanced safety.",
         "Customizable designs suit various architectural styles.",
       ],
-      image: "/project/p1/5.webp",
+      image: "/winda/2.webp",
     },
     {
       title: "uPVC Sliding Doors for Modern Spaces",
@@ -35,7 +35,7 @@ const WindaContent = () => {
         "Space-saving design ideal for compact areas.",
         "Double-glazed options for superior energy efficiency.",
       ],
-      image: "/images/1.webp",
+      image: "/winda/3.webp",
     },
   ];
 

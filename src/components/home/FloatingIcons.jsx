@@ -104,7 +104,6 @@ function FloatingIcons() {
         }`}
         aria-label="Contact Us"
       >
-        <MessageCircle className="w-5 h-5 text-amber-100 group-hover:rotate-12 transition-transform duration-300" />
 
         <span className="font-medium tracking-wide text-sm sm:text-base">
           Contact Us

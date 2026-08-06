@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Search, Menu, Phone, Mail, Clock, Facebook, Instagram, Twitter, Linkedin, X, MapPin, Send, ChevronDown } from "lucide-react";
+import { Search, Menu, Phone, Mail, Clock, Facebook, Instagram, Linkedin, X, MapPin, Send, ChevronDown } from "lucide-react";
 import { cn } from "@/lib/utils";
 
 const NAV_LINKS = [
@@ -67,7 +67,6 @@ const Header = () => {
           <div className="flex items-center gap-4 text-stone-300">
             <a href="https://www.facebook.com/profile.php?id=61569129481661" target="_blank" rel="noreferrer"><Facebook className="w-4 h-4 cursor-pointer hover:text-[#bd845c] transition-colors" /></a>
             <a href="https://www.instagram.com/arqtrace/" target="_blank" rel="noreferrer"><Instagram className="w-4 h-4 cursor-pointer hover:text-[#bd845c] transition-colors" /></a>
-            <a href="https://x.com/arqtrace" target="_blank" rel="noreferrer"><Twitter className="w-4 h-4 cursor-pointer hover:text-[#bd845c] transition-colors" /></a>
             <a href="https://www.linkedin.com/company/arqtrace-pvt-ltd/about/?viewAsMember=true" target="_blank" rel="noreferrer"><Linkedin className="w-4 h-4 cursor-pointer hover:text-[#bd845c] transition-colors" /></a>
           </div>
         </div>
@@ -211,7 +210,6 @@ const Header = () => {
           <div className="flex items-center gap-4 pb-8 border-b border-stone-800">
             <a href="https://www.facebook.com/profile.php?id=61569129481661" target="_blank" rel="noreferrer" className="w-9 h-9 bg-stone-900 hover:bg-[#bd845c] rounded-full flex items-center justify-center transition-colors text-stone-300 hover:text-white"><Facebook className="w-4 h-4" /></a>
             <a href="https://www.instagram.com/arqtrace/" target="_blank" rel="noreferrer" className="w-9 h-9 bg-stone-900 hover:bg-[#bd845c] rounded-full flex items-center justify-center transition-colors text-stone-300 hover:text-white"><Instagram className="w-4 h-4" /></a>
-            <a href="https://x.com/arqtrace" target="_blank" rel="noreferrer" className="w-9 h-9 bg-stone-900 hover:bg-[#bd845c] rounded-full flex items-center justify-center transition-colors text-stone-300 hover:text-white"><Twitter className="w-4 h-4" /></a>
             <a href="https://www.linkedin.com/company/arqtrace-pvt-ltd/about/?viewAsMember=true" target="_blank" rel="noreferrer" className="w-9 h-9 bg-stone-900 hover:bg-[#bd845c] rounded-full flex items-center justify-center transition-colors text-stone-300 hover:text-white"><Linkedin className="w-4 h-4" /></a>
           </div>
         </div>
