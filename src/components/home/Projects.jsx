@@ -14,17 +14,17 @@ const projects = [
     title: "Lemon-Tree",
     // category: "Energy-Efficient Living",
     category: "Contemporary uPVC Window Systems",
-    image: "/testimonial/puneet-sharma.webp",
+    image: "/project/lemon-tree.webp",
   },
   {
-    title: "Residence of Mr. Naman Gupta",
+    title: "Hunny Sethi Puneet Bhagat",
     category: "Aluminum Doors",
-    image: "/testimonial/naman-gupta.webp",
+    image: "/project/hunny.webp",
   },
   {
     title: "Outdoor Furniture Collections",
     category: "Exterior Comfort",
-    image: "/home/5.webp",
+    image: "/brand/gebe.webp",
   },
 ];
 

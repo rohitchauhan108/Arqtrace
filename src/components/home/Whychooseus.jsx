@@ -113,7 +113,7 @@ const WhyChoose = () => {
               >
                 <div className="aspect-[4/5] overflow-hidden shadow-2xl rounded-sm group">
                   <img 
-                    src="/home/3.webp" 
+                    src="/images/4.webp" 
                     alt="Installation" 
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />

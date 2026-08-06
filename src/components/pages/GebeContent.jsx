@@ -15,7 +15,7 @@ const GebeContent = () => {
     {
       title: "Stylish & Ergonomic Designs",
       desc: "Our collections are thoughtfully crafted to suit every taste, featuring modern, classic, and customized styles. Designed with ergonomics in mind, our pieces promise maximum comfort, making every outdoor space warm, inviting, and effortlessly stylish. As the best outdoor furniture company, we take pride in offering premium outdoor patio furniture sets that transform your backyard into a true retreat.",
-      image: "/project/p2/3.webp",
+      image: "/gebe/1.webp",
     },
     {
       title: "5-Year Warranty & Trusted Expertise",
@@ -124,7 +124,7 @@ const GebeContent = () => {
               <div className="absolute -inset-4 bg-[#fbf9f4] -z-10 transform -rotate-1 translate-x-2" />
               <div className="overflow-hidden border border-stone-100 shadow-sm group bg-white">
                 <img
-                  src="/project/p1/2.webp"
+                  src="/brand/gebe.webp"
                   alt="GEBE outdoor furniture"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 />

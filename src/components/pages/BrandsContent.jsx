@@ -12,7 +12,7 @@ const BrandsContent = () => {
       subtitle: "Premium Aluminum Windows & Doors",
       description:
         "SCHUCO is a global leader in window systems, founded in 1951 and headquartered in Bielefeld, Germany, with a presence in over 80 countries worldwide. Lumani is the first and premier partner of SCHUCO in India, bringing German engineering excellence to the Indian market. With over 12 years of industry expertise, Lumani SCHUCO products combine precision engineering with modern aesthetics, offering advanced thermal insulation, noise reduction, and enhanced security features. SCHUCO manufactures premium raw materials while Lumani delivers these high-end solutions to homeowners and builders. Every product is backed by a 10-year warranty on all hardware and accessories, making Lumani SCHUCO a trusted choice for contemporary homes and commercial spaces.",
-      image: "/project/p1/4.webp",
+      image: "/brand/lumani.webp",
       href: "/lumani-schuco",
       features: ["German Engineering", "10-Year Warranty", "Thermal Insulation", "Noise Reduction"],
     },
@@ -21,7 +21,7 @@ const BrandsContent = () => {
       subtitle: "Trusted uPVC Windows & Doors",
       description:
         "Winda represents more than two decades of customer trust and consistent endeavor to exceed expectations in fenestration solutions across North India. WINDA is committed to international standards with a perfect amalgamation of infrastructure including state-of-the-art technology, cutting-edge imported machinery, and well-equipped facilities. Continuous research and development enable Winda to deliver cost-effective, environment-friendly, and energy-efficient uPVC solutions that comply with the highest international standards and EU legislation requirements. Winda brings integrated high-performance window and door systems backed by well-trained, experienced manpower and stringent quality control. Products are manufactured for durability, noise reduction, weather resistance, and low maintenance. With a 21-year warranty, Winda combines quality systems with latest technology to deliver solutions previously unavailable in the region.",
-      image: "/project/p1/1.webp",
+      image: "/brand/winda.webp",
       href: "/winda",
       features: ["Superior Insulation", "Noise Reduction", "21-Year Warranty", "Eco-Friendly"],
     },
@@ -30,7 +30,7 @@ const BrandsContent = () => {
       subtitle: "Premium Outdoor Furniture",
       description:
         "As part of our premium offerings, Arqtrace proudly brings to India the world-renowned GEBE German Outdoor Furniture. GEBE has become a symbol of style, strength, and sustainability in outdoor living. Crafted from the world's best materials such as Raucord German wicker, high-grade aluminum, and weather-resistant fabrics, GEBE furniture is built to withstand UV rays, water, extreme climates, and everyday use. From patio furniture sets and pool loungers to garden tables, chairs, and customized outdoor solutions, every piece reflects European craftsmanship and timeless design. GEBE combines premium quality, stylish ergonomic designs, and eco-friendly materials with long-term warranty assurance for complete peace of mind in both residential and commercial outdoor spaces.",
-      image: "/project/p2/6.webp",
+      image: "/brand/gebe.webp",
       href: "/gebe",
       features: ["German Craftsmanship", "Weather Resistant", "Eco-Friendly", "Premium Materials"],
     },
