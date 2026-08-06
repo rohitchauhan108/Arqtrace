@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
-import { ArrowRight, Shield, CheckCircle, Users, Award } from "lucide-react";
+import { ArrowRight, Shield, CheckCircle, Users, Award, Link } from "lucide-react";
 
 const AboutContent = () => {
   return (
@@ -133,10 +133,12 @@ const AboutContent = () => {
               </div>
 
               <div className="pt-2">
-                <Button className="bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-5 rounded-none text-xs font-bold tracking-widest uppercase flex items-center gap-4 transition-all duration-300 group shadow-md hover:shadow-lg">
-                  Get In Touch
-                  <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
-                </Button>
+                <Link href="/contact">
+                  <Button className="bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-5 rounded-none text-xs font-bold tracking-widest uppercase flex items-center gap-4 transition-all duration-300 group shadow-md hover:shadow-lg">
+                    Get In Touch
+                    <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-300" />
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

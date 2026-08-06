@@ -3,7 +3,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Facebook, Instagram, ArrowRight, Play, ArrowLeft } from "lucide-react";
+import { Facebook, Instagram, ArrowRight, Play, ArrowLeft, Link } from "lucide-react";
 
 const SLIDES_DATA = [
   {
@@ -24,23 +24,23 @@ const SLIDES_DATA = [
     subtitle: "Seamless Installation",
     title: "Professional Installation and Completion.",
     description:
-  "Our experienced team of B.Tech and Civil Engineers ensures precise installation, flawless execution, and reliable after-sales support, delivering excellence at every stage of your project.",
+      "Our experienced team of B.Tech and Civil Engineers ensures precise installation, flawless execution, and reliable after-sales support, delivering excellence at every stage of your project.",
     mainImage: "/project/p1/1.webp",
   },
   {
-  subtitle: "Architectural Aluminum & Facades",
-  title: "Elegant Window Systems That Transform Every Space",
-  description:
-    "Create brighter, more sophisticated interiors with premium aluminium facades, sliding windows and structural glazing solutions engineered for strength, aesthetics, and lasting performance.",
-  mainImage: "/about-section/1.jpg",
-},
-{
-  subtitle: "Outdoor Living Collection",
-  title: "Premium Pergolas & Outdoor Furniture for Timeless Comfort",
-  description:
-    "Enhance terraces, gardens, balconies, and commercial spaces with stylish pergolas, outdoor furniture, and weather-resistant architectural solutions designed to blend luxury with functionality.",
-  mainImage: "/home/6.webp",
-},
+    subtitle: "Architectural Aluminum & Facades",
+    title: "Elegant Window Systems That Transform Every Space",
+    description:
+      "Create brighter, more sophisticated interiors with premium aluminium facades, sliding windows and structural glazing solutions engineered for strength, aesthetics, and lasting performance.",
+    mainImage: "/about-section/1.jpg",
+  },
+  {
+    subtitle: "Outdoor Living Collection",
+    title: "Premium Pergolas & Outdoor Furniture for Timeless Comfort",
+    description:
+      "Enhance terraces, gardens, balconies, and commercial spaces with stylish pergolas, outdoor furniture, and weather-resistant architectural solutions designed to blend luxury with functionality.",
+    mainImage: "/home/6.webp",
+  },
 ];
 
 const Hero = () => {
@@ -52,14 +52,33 @@ const Hero = () => {
   };
 
   const handlePrev = () => {
-    setCurrentIdx((prev) => (prev - 1 + SLIDES_DATA.length) % SLIDES_DATA.length);
+    setCurrentIdx(
+      (prev) => (prev - 1 + SLIDES_DATA.length) % SLIDES_DATA.length,
+    );
   };
 
   return (
-    <section className="relative min-h-[750px] lg:h-[850px] w-full bg-[#fbf9f4] overflow-hidden flex items-center bg-repeat" style={{ backgroundImage: "url('/hero-bg.jpg')" }}>
+    <section
+      className="relative min-h-[750px] lg:h-[850px] w-full bg-[#fbf9f4] overflow-hidden flex items-center bg-repeat"
+      style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+    >
       <div className="absolute left-6 bottom-1/3 z-20 hidden md:flex flex-col gap-6 text-[#7c695c]">
-        <a href="https://www.facebook.com/profile.php?id=61569129481661" target="_blank" rel="noreferrer" className="hover:text-amber-700 transition-colors"><Facebook className="w-4 h-4" /></a>
-        <a href="https://www.instagram.com/arqtrace/" target="_blank" rel="noreferrer" className="hover:text-amber-700 transition-colors"><Instagram className="w-4 h-4" /></a>
+        <a
+          href="https://www.facebook.com/profile.php?id=61569129481661"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-amber-700 transition-colors"
+        >
+          <Facebook className="w-4 h-4" />
+        </a>
+        <a
+          href="https://www.instagram.com/arqtrace/"
+          target="_blank"
+          rel="noreferrer"
+          className="hover:text-amber-700 transition-colors"
+        >
+          <Instagram className="w-4 h-4" />
+        </a>
         <span className="w-[1px] h-12 bg-[#7c695c]/30 mx-auto mt-2" />
       </div>
 
@@ -91,10 +110,12 @@ const Hero = () => {
               </p>
 
               <div>
-                <Button className="bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-6 rounded-none text-xs font-bold tracking-widest uppercase flex items-center gap-4 transition-all group">
-                  Explore Arqtrace
-                  <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <Link href="/about">
+                  <Button className="bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-6 rounded-none text-xs font-bold tracking-widest uppercase flex items-center gap-4 transition-all group">
+                    Explore Arqtrace
+                    <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                </Link>
               </div>
             </motion.div>
           </AnimatePresence>
@@ -116,8 +137,11 @@ const Hero = () => {
               />
 
               <div className="relative w-full h-full overflow-hidden bg-stone-100 flex items-center justify-center">
-                <img src={currentSlide.mainImage} alt="Arqtrace premium product showcase" className="w-full h-full object-cover" />
-                
+                <img
+                  src={currentSlide.mainImage}
+                  alt="Arqtrace premium product showcase"
+                  className="w-full h-full object-cover"
+                />
               </div>
             </motion.div>
           </AnimatePresence>
@@ -134,7 +158,11 @@ const Hero = () => {
                   : "border-stone-200 opacity-60 hover:opacity-90"
               }`}
             >
-              <img src={slide.mainImage} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" alt={`Select slide ${index + 1}`} />
+              <img
+                src={slide.mainImage}
+                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                alt={`Select slide ${index + 1}`}
+              />
             </button>
           ))}
         </div>
@@ -143,17 +171,27 @@ const Hero = () => {
       <div className="absolute bottom-0 left-0 w-full z-20 hidden lg:block">
         <div className="container mx-auto px-16 flex justify-between items-end pb-12">
           <div className="flex gap-1 ml-[48%] transform -translate-x-1/2">
-            <button onClick={handlePrev} className="bg-white hover:bg-[#bd845c] text-[#2d1e18] hover:text-white px-8 py-4 font-bold uppercase tracking-wider text-xs border border-stone-200/60 shadow-sm transition-all flex items-center gap-2">
+            <button
+              onClick={handlePrev}
+              className="bg-white hover:bg-[#bd845c] text-[#2d1e18] hover:text-white px-8 py-4 font-bold uppercase tracking-wider text-xs border border-stone-200/60 shadow-sm transition-all flex items-center gap-2"
+            >
               <ArrowLeft className="w-3 h-3" /> Prev
             </button>
-            <button onClick={handleNext} className="bg-white hover:bg-[#bd845c] text-[#2d1e18] hover:text-white px-8 py-4 font-bold uppercase tracking-wider text-xs border border-stone-200/60 shadow-sm transition-all flex items-center gap-2">
+            <button
+              onClick={handleNext}
+              className="bg-white hover:bg-[#bd845c] text-[#2d1e18] hover:text-white px-8 py-4 font-bold uppercase tracking-wider text-xs border border-stone-200/60 shadow-sm transition-all flex items-center gap-2"
+            >
               Next <ArrowRight className="w-3 h-3" />
             </button>
           </div>
 
           <div className="flex items-baseline gap-2 font-serif text-[#2d1e18]">
-            <span className="text-stone-400 text-sm font-sans tracking-widest">0{SLIDES_DATA.length}</span>
-            <span className="text-4xl font-bold text-[#b07d57]">0{currentIdx + 1}</span>
+            <span className="text-stone-400 text-sm font-sans tracking-widest">
+              0{SLIDES_DATA.length}
+            </span>
+            <span className="text-4xl font-bold text-[#b07d57]">
+              0{currentIdx + 1}
+            </span>
           </div>
         </div>
       </div>
