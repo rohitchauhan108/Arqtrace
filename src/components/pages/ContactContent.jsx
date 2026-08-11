@@ -1,10 +1,71 @@
 "use client";
 
+import { useState } from "react";
 import { Button } from "@/components/ui/Button";
 import { motion } from "framer-motion";
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, CheckCircle, AlertCircle, Loader2 } from "lucide-react";
 
 const ContactContent = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: "",
+  });
+  const [status, setStatus] = useState("idle");
+  const [errorMsg, setErrorMsg] = useState("");
+
+  const WEB3FORM_KEY = process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY;
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setStatus("loading");
+    setErrorMsg("");
+
+    if (!WEB3FORM_KEY || WEB3FORM_KEY === "your-web3form-access-key-here") {
+      setErrorMsg("Web3Form access key not configured. Please set NEXT_PUBLIC_WEB3FORM_ACCESS_KEY in .env.local");
+      setStatus("error");
+      return;
+    }
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json",
+        },
+        body: JSON.stringify({
+          access_key: WEB3FORM_KEY,
+          name: formData.name,
+          email: formData.email,
+          phone: formData.phone,
+          message: formData.message,
+          subject: `New Arqtrace Inquiry from ${formData.name}`,
+          from_name: "Arqtrace Website",
+          reply_to: formData.email,
+        }),
+      });
+
+      const result = await response.json();
+
+      if (result.success) {
+        setStatus("success");
+        setFormData({ name: "", email: "", phone: "", message: "" });
+      } else {
+        throw new Error(result.message || "Failed to send message");
+      }
+    } catch (error) {
+      setErrorMsg(error.message || "Something went wrong. Please try again.");
+      setStatus("error");
+    }
+  };
+
   return (
     <>
       {/* Hero Section */}
@@ -96,46 +157,114 @@ const ContactContent = () => {
             <div className="bg-white border border-stone-200 p-8 lg:p-10 shadow-xl relative">
               <span className="absolute top-0 left-0 w-full h-[3px] bg-[#bd845c]" />
               <h3 className="text-2xl font-serif font-bold text-[#2d1e18] mb-8">Send Us a Message</h3>
-              <form className="space-y-6" onSubmit={(e) => e.preventDefault()}>
-                <div>
-                  <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name</label>
-                  <input 
-                    type="text" 
-                    className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all font-sans text-sm"
-                    placeholder="Enter your full name"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Email Address</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all font-sans text-sm"
-                    placeholder="Enter your email"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all font-sans text-sm"
-                    placeholder="Enter your phone number"
-                  />
-                </div>
-                <div>
-                  <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Your Message</label>
-                  <textarea 
-                    rows={5}
-                    className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all resize-none font-sans text-sm"
-                    placeholder="Tell us about your project..."
-                  />
-                </div>
-                <Button className="w-full bg-[#bd845c] hover:bg-[#a6704c] text-white py-6 rounded-none text-xs font-sans font-bold tracking-widest uppercase flex items-center justify-center gap-3 transition-colors shadow-md">
-                  Send Message
-                  <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
-                  </svg>
-                </Button>
-              </form>
+
+              {status === "success" ? (
+                <motion.div 
+                  initial={{ opacity: 0, y: 10 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  className="flex flex-col items-center justify-center py-12 text-center"
+                >
+                  <div className="w-20 h-20 rounded-full bg-green-50 flex items-center justify-center mb-6">
+                    <CheckCircle className="w-12 h-12 text-green-500" strokeWidth={1.5} />
+                  </div>
+                  <h4 className="text-xl font-serif font-bold text-[#2d1e18] mb-3">Message Sent Successfully!</h4>
+                  <p className="text-stone-600 font-sans text-sm leading-relaxed mb-8 max-w-sm">
+                    Thank you for reaching out to Arqtrace. We have received your message and our team will get back to you within 24 hours.
+                  </p>
+                  <Button 
+                    onClick={() => setStatus("idle")}
+                    className="bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-4 rounded-none text-xs font-sans font-bold tracking-widest uppercase transition-colors shadow-md"
+                  >
+                    Send Another Message
+                  </Button>
+                </motion.div>
+              ) : (
+                <form className="space-y-6" onSubmit={handleSubmit}>
+                  <div>
+                    <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Your Name</label>
+                    <input 
+                      type="text" 
+                      name="name"
+                      value={formData.name}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all font-sans text-sm"
+                      placeholder="Enter your full name"
+                      disabled={status === "loading"}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Email Address</label>
+                    <input 
+                      type="email" 
+                      name="email"
+                      value={formData.email}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all font-sans text-sm"
+                      placeholder="Enter your email"
+                      disabled={status === "loading"}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Phone Number</label>
+                    <input 
+                      type="tel" 
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all font-sans text-sm"
+                      placeholder="Enter your phone number"
+                      disabled={status === "loading"}
+                    />
+                  </div>
+                  <div>
+                    <label className="block text-xs font-sans font-bold uppercase tracking-wider text-stone-700 mb-2">Your Message</label>
+                    <textarea 
+                      rows={5}
+                      name="message"
+                      value={formData.message}
+                      onChange={handleChange}
+                      required
+                      className="w-full px-4 py-3 border border-stone-200 bg-white focus:outline-none focus:border-[#bd845c] transition-all resize-none font-sans text-sm"
+                      placeholder="Tell us about your project..."
+                      disabled={status === "loading"}
+                    />
+                  </div>
+
+                  {status === "error" && (
+                    <motion.div 
+                      initial={{ opacity: 0, height: 0 }}
+                      animate={{ opacity: 1, height: "auto" }}
+                      className="flex items-start gap-3 p-4 bg-red-50 border border-red-200"
+                    >
+                      <AlertCircle className="w-5 h-5 text-red-500 shrink-0 mt-0.5" />
+                      <p className="text-sm font-sans text-red-700 leading-relaxed">{errorMsg}</p>
+                    </motion.div>
+                  )}
+
+                  <Button 
+                    type="submit"
+                    disabled={status === "loading"}
+                    className="w-full bg-[#bd845c] hover:bg-[#a6704c] disabled:bg-[#bd845c]/70 disabled:cursor-not-allowed text-white py-6 rounded-none text-xs font-sans font-bold tracking-widest uppercase flex items-center justify-center gap-3 transition-colors shadow-md group"
+                  >
+                    {status === "loading" ? (
+                      <>
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        Send Message
+                        <svg className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 19l9 2-9-18-9 18 9-2zm0 0v-8" />
+                        </svg>
+                      </>
+                    )}
+                  </Button>
+                </form>
+              )}
             </div>
           </div>
 
