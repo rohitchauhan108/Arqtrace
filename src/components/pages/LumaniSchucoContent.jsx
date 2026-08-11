@@ -20,9 +20,9 @@ const LumaniSchucoContent = () => {
   ];
 
   const APPLICATIONS = [
-    { title: "Residential Spaces", image: "/project/p1/2.webp", desc: "Upgrade your home with Lumani Schüco’s beautifully crafted Aluminum and glass windows and doors, designed to combine lasting durability with stunning aesthetics. Their energy-efficient features not only help regulate indoor temperatures but also reduce outside noise for a peaceful living space. As trusted Aluminum Door manufacturers, Lumani Schüco ensures each product enhances both security and style, creating a comfortable and safe environment for you and your family." },
-    { title: "Commercial Buildings", image: "/project/p1/3.webp", desc: "For commercial projects, Lumani Schüco delivers strong and stylish solutions that perfectly balance design with durability. As leading Aluminum window manufacturers and Aluminum Door manufacturers, they provide products ideal for offices, retail spaces, and hotels. These windows and doors not only boost energy efficiency but also add a sleek, modern touch to any commercial building." },
-    { title: "Luxury Projects", image: "/images/3.webp", desc: "Lumani Schüco is the go-to choice for upscale residences, villas, and luxury resorts. Renowned among top Aluminum window manufacturers and Aluminum Door manufacturers, their premium aluminum and glass solutions beautifully enhance architectural design while delivering outstanding performance. These products effortlessly combine luxury with durability to meet the highest standards in both style and functionality." },
+    { title: "Residential Spaces", image: "/lumani/4.webp", desc: "Upgrade your home with Lumani Schüco’s beautifully crafted Aluminum and glass windows and doors, designed to combine lasting durability with stunning aesthetics. Their energy-efficient features not only help regulate indoor temperatures but also reduce outside noise for a peaceful living space. As trusted Aluminum Door manufacturers, Lumani Schüco ensures each product enhances both security and style, creating a comfortable and safe environment for you and your family." },
+    { title: "Commercial Buildings", image: "/lumani/9.webp", desc: "For commercial projects, Lumani Schüco delivers strong and stylish solutions that perfectly balance design with durability. As leading Aluminum window manufacturers and Aluminum Door manufacturers, they provide products ideal for offices, retail spaces, and hotels. These windows and doors not only boost energy efficiency but also add a sleek, modern touch to any commercial building." },
+    { title: "Luxury Projects", image: "/lumani/6.webp", desc: "Lumani Schüco is the go-to choice for upscale residences, villas, and luxury resorts. Renowned among top Aluminum window manufacturers and Aluminum Door manufacturers, their premium aluminum and glass solutions beautifully enhance architectural design while delivering outstanding performance. These products effortlessly combine luxury with durability to meet the highest standards in both style and functionality." },
   ];
 
   const WHY_ARQTRACE = [
@@ -36,14 +36,14 @@ const LumaniSchucoContent = () => {
       id: "win-perf",
       title: "High-Performance Aluminum Windows", 
       desc: "Lumani Schüco brings you Aluminum Windows and Doors that are thoughtfully designed for energy efficiency, strength, and long-lasting performance. With advanced insulation technology, they help maintain a comfortable indoor climate year-round. The sleek, slim profiles of these Aluminum and glass windows let in more natural light, creating bright, open spaces while offering excellent resistance to harsh weather conditions.", 
-      image: "/project/p1/7.webp",
+      image: "/lumani/1.webp",
       specs: { profile: "75mm Depth", insulation: "Uf up to 0.92 W/(m²K)", glass: "Up to 52mm Triple Glazing", resistance: "Class 4 (EN 12207)" }
     },
     { 
       id: "door-prem",
       title: "Premium Aluminum Doors", 
       desc: "Lumani Schüco doors are the perfect blend of strength, style, and security—crafted to complement both modern and traditional spaces. As part of our premium range of Aluminum Windows and Doors, they offer exceptional durability and a sleek finish. Trusted among leading Aluminum Door manufacturers, Lumani Schüco designs feature robust construction and advanced locking systems, with customization options to suit any architectural vision.", 
-      image: "/home/window-door.webp",
+      image: "/lumani/3.webp",
       specs: { profile: "90mm Depth", insulation: "Ud up to 0.80 W/(m²K)", glass: "Integrated Smart Security", resistance: "RC2 / RC3 Certified" }
     },
     { 
@@ -66,7 +66,7 @@ const LumaniSchucoContent = () => {
         <div 
           className="absolute inset-0 opacity-100 scale-100 motion-safe:animate-[pulse_8s_ease-in-out_infinite]"
           style={{ 
-            backgroundImage: "url('/home/5.webp')", 
+            backgroundImage: "url('/lumani/7.webp')", 
             backgroundSize: "cover", 
             backgroundPosition: "center" 
           }}
@@ -202,17 +202,10 @@ const LumaniSchucoContent = () => {
                   {/* Copy Deck content with dynamic interactive tabs */}
                   <div className={`lg:col-span-6 space-y-6 ${index % 2 === 1 ? 'lg:order-1' : ''}`}>
                     <div className="flex items-center justify-between border-b border-stone-200 pb-2">
-                      <span className="text-[11px] font-sans font-bold tracking-widest text-[#bd845c] uppercase">System 0{index + 1}</span>
+                      {/* <span className="text-[11px] font-sans font-bold tracking-widest text-[#bd845c] uppercase">System 0{index + 1}</span> */}
                       
                       {/* Technical Interaction Controls */}
-                      <div className="flex gap-2 bg-stone-200/50 p-1 border border-stone-200/40 rounded-none">
-                        <button 
-                          onClick={() => toggleSpecTab(product.id, "overview")}
-                          className={`px-3 py-1 text-[10px] uppercase font-sans font-bold tracking-wider transition-all flex items-center gap-1.5 ${currentTab === 'overview' ? 'bg-[#bd845c] text-white shadow-xs' : 'text-stone-600 hover:text-[#2d1e18]'}`}
-                        >
-                          <Eye className="w-3 h-3" /> Overview
-                        </button>
-                      </div>
+                      
                     </div>
 
                     <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#2d1e18] tracking-tight">{product.title}</h3>

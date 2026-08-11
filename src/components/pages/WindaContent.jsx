@@ -15,7 +15,7 @@ const WindaContent = () => {
         "Advanced noise reduction creates a peaceful environment.",
         "Low-maintenance materials guarantee long-lasting durability.",
       ],
-      image: "/winda/1.webp",
+      image: "/winda/4.webp",
     },
     {
       title: "Premium uPVC Doors and Windows",
@@ -25,7 +25,7 @@ const WindaContent = () => {
         "Secure multi-point locking systems provide enhanced safety.",
         "Customizable designs suit various architectural styles.",
       ],
-      image: "/winda/2.webp",
+      image: "/winda/8.webp",
     },
     {
       title: "uPVC Sliding Doors for Modern Spaces",
@@ -35,15 +35,10 @@ const WindaContent = () => {
         "Space-saving design ideal for compact areas.",
         "Double-glazed options for superior energy efficiency.",
       ],
-      image: "/winda/3.webp",
+      image: "/winda/9.webp",
     },
   ];
 
-  const APPLICATIONS = [
-    { title: "Residential Spaces", image: "/project/p1/2.webp", desc: "Upgrade your home with Lumani Schüco’s beautifully crafted Aluminum and glass windows and doors, designed to combine lasting durability with stunning aesthetics. Their energy-efficient features not only help regulate indoor temperatures but also reduce outside noise for a peaceful living space. As trusted Aluminum Door manufacturers, Lumani Schüco ensures each product enhances both security and style, creating a comfortable and safe environment for you and your family." },
-    { title: "Commercial Buildings", image: "/project/p1/3.webp", desc: "For commercial projects, Lumani Schüco delivers strong and stylish solutions that perfectly balance design with durability. As leading Aluminum window manufacturers and Aluminum Door manufacturers, they provide products ideal for offices, retail spaces, and hotels. These windows and doors not only boost energy efficiency but also add a sleek, modern touch to any commercial building." },
-    { title: "Luxury Projects", image: "/images/3.webp", desc: "Lumani Schüco is the go-to choice for upscale residences, villas, and luxury resorts. Renowned among top Aluminum window manufacturers and Aluminum Door manufacturers, their premium aluminum and glass solutions beautifully enhance architectural design while delivering outstanding performance. These products effortlessly combine luxury with durability to meet the highest standards in both style and functionality." },
-  ];
 
 
   const ADVANTAGES = [
@@ -65,7 +60,7 @@ const WindaContent = () => {
       <section
         className="relative min-h-screen lg:min-h-162.5 w-full overflow-hidden flex items-center bg-[#2d1e18] select-none"
         style={{
-          backgroundImage: "url('/images/4.webp')",
+          backgroundImage: "url('/winda/7.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -163,9 +158,7 @@ const WindaContent = () => {
                 </div>
 
                 <div className={`lg:col-span-6 space-y-6 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-sans font-bold tracking-[0.4em] text-[#bd845c] uppercase">System 0{index + 1}</span>
-                  </div>
+                 
                   <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#2d1e18] tracking-tight">
                     {product.title}
                   </h3>
@@ -187,41 +180,7 @@ const WindaContent = () => {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-white select-none border-t border-stone-100">
-        <div className="container mx-auto px-6 lg:px-16">
-          <div className="mb-20 text-center max-w-3xl mx-auto">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="w-1.5 h-1.5 bg-[#bd845c]" />
-              <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c]">Applications</span>
-              <span className="w-1.5 h-1.5 bg-[#bd845c]" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] tracking-tight">
-              Applications of Winda uPVC Solutions
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-            {APPLICATIONS.map((app) => (
-              <div key={app.title} className="group bg-white flex flex-col h-full border border-stone-100 hover:border-stone-200 hover:shadow-xl transition-all duration-500">
-                <div className="aspect-4/3 overflow-hidden bg-stone-100 relative">
-                  <img src={app.image} alt={app.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-[#2d1e18]/10 group-hover:bg-transparent transition-colors duration-500" />
-                </div>
-                <div className="p-8 grow flex flex-col justify-between">
-                  <div className="space-y-4">
-                    <h3 className="text-lg font-serif font-bold text-[#2d1e18] group-hover:text-[#bd845c] transition-colors duration-300">
-                      {app.title}
-                    </h3>
-                    <p className="text-stone-500 text-xs font-sans leading-relaxed">
-                      {app.desc}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       <section className="py-24 lg:py-32 bg-[#fbf9f6] select-none border-y border-stone-200/40">
         <div className="container mx-auto px-6 lg:px-16">

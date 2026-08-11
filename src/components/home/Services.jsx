@@ -11,6 +11,7 @@ const services = [
     description:
       "Premium aluminum window systems designed for durability, refined aesthetics, and lasting performance in both modern homes and commercial spaces.",
     image: "/home/1.webp",
+    link: "/lumani-schuco-aluminium-windows",
   },
   {
     icon: <Layout className="w-10 h-10 stroke-[1.2]" />,
@@ -18,6 +19,7 @@ const services = [
     description:
       "Energy-efficient and low-maintenance products that bring comfort, insulation, and elegance to every project.",
     image: "/home/window-door.webp",
+    link: "/winda-upvc-windows",
   },
   {
     icon: <ShieldAlert className="w-10 h-10 stroke-[1.2]" />,
@@ -25,6 +27,7 @@ const services = [
     description:
       "Contemporary partition solutions and glass systems tailored to create bright, open, and functional interiors.",
     image: "/home/partition.webp",
+    link: "/brands",
   },
   {
     icon: <Sofa className="w-10 h-10 stroke-[1.2]" />,
@@ -32,6 +35,7 @@ const services = [
     description:
       "Premium outdoor furniture pieces that merge comfort and craftsmanship for elegant terrace, garden, and hospitality spaces.",
     image: "/home/7.webp",
+    link: "/gebe",
   },
 ];
 
@@ -108,15 +112,15 @@ const Services = () => {
               </div>
 
               <div className="pt-4 border-t border-stone-100 group-hover:border-white/20 transition-colors">
-                <a
-                  href="#"
+                <Link
+                  href={service.link}
                   className="inline-flex items-center justify-between w-full font-sans font-bold text-xs uppercase tracking-widest text-stone-400 group-hover:text-white transition-colors duration-300"
                 >
                   <span>Discover More</span>
                   <div className="w-8 h-8 rounded-full border border-stone-200 group-hover:border-white group-hover:bg-white group-hover:text-[#bd845c] flex items-center justify-center transition-all duration-300">
                     <ArrowRight className="w-3.5 h-3.5" />
                   </div>
-                </a>
+                </Link>
               </div>
             </div>
           ))}

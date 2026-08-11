@@ -298,7 +298,7 @@ const AboutContent = () => {
               <div className="col-span-8 relative z-10">
                 <div className=" overflow-hidden shadow-xl border border-stone-200/20 bg-stone-100">
                   <img
-                    src="/project/p1/3.webp"
+                    src="/lumani/7.webp"
                     alt="Modern clean luxury home architecture interior layout"
                     className="w-full h-[300px] object-cover"
                   />
@@ -308,7 +308,7 @@ const AboutContent = () => {
               <div className="col-span-6 absolute -right-4 bottom-8 z-0">
                 <div className=" overflow-hidden shadow-lg border border-stone-200/30 bg-stone-100">
                   <img
-                    src="/project/p1/2.webp"
+                    src="/winda/7.webp"
                     alt="Premium custom minimalist window profiles frame installation"
                     className="w-full h-full object-cover grayscale-[15%]"
                   />
@@ -387,7 +387,6 @@ const AboutContent = () => {
         </div>
       </section>
 
-      {/* Partner Logos Section */}
       {/* Partner Logos Marquee Section */}
       <section className="py-20 lg:py-24 bg-[#fbf9f4] relative overflow-hidden select-none">
         <div className="absolute inset-0 bg-[url('/bg-pattern.png')] opacity-30 pointer-events-none" />

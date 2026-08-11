@@ -39,7 +39,7 @@ const SLIDES_DATA = [
     title: "Premium Pergolas & Outdoor Furniture for Timeless Comfort",
     description:
       "Enhance terraces, gardens, balconies, and commercial spaces with stylish pergolas, outdoor furniture, and weather-resistant architectural solutions designed to blend luxury with functionality.",
-    mainImage: "/home/6.webp",
+    mainImage: "/gebe/1.webp",
   },
 ];
 

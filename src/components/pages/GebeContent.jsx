@@ -10,35 +10,17 @@ const GebeContent = () => {
     {
       title: "Superior Craftsmanship & Durability",
       desc: "GEBE outdoor furniture is built to stand the test of time. Crafted from high-quality, weather-resistant materials, each piece is designed to withstand UV rays, water damage, and tough outdoor conditions. As the best outdoor furniture company, we take pride in offering durable and stylish outdoor lawn furniture that keeps your space looking great season after season.",
-      image: "https://images.unsplash.com/photo-1600210492493-0946911123ea?q=80&w=2070&auto=format&fit=crop",
+      image: "/gebe/3.webp",
     },
     {
       title: "Stylish & Ergonomic Designs",
       desc: "Our collections are thoughtfully crafted to suit every taste, featuring modern, classic, and customized styles. Designed with ergonomics in mind, our pieces promise maximum comfort, making every outdoor space warm, inviting, and effortlessly stylish. As the best outdoor furniture company, we take pride in offering premium outdoor patio furniture sets that transform your backyard into a true retreat.",
-      image: "/gebe/1.webp",
+      image: "/gebe/12.webp",
     },
     {
       title: "5-Year Warranty & Trusted Expertise",
       desc: "With 15 years of industry experience and a solid 5-year warranty, GEBE stands behind every piece of furniture we create. As the best outdoor furniture company, we are dedicated to delivering products that are not only stylish but also built to last. Whether it is our elegant garden furniture table and chairs or other outdoor essentials, you can trust GEBE to bring durability and timeless appeal to your outdoor space.",
-      image: "/project/p1/4.webp",
-    },
-  ];
-
-  const APPLICATIONS = [
-    {
-      title: "Residential Spaces",
-      image: "https://images.unsplash.com/photo-1484154218962-a197022b5858?q=80&w=2073&auto=format&fit=crop",
-      desc: "Transform your outdoor spaces with premium furniture that perfectly blends comfort and elegance. Whether you are lounging, dining, or entertaining, GEBE offers outdoor patio furniture sets and stylish garden furniture table and chairs that bring timeless charm to your home. Designed to elevate your outdoor aesthetic, every piece is crafted to make your space as welcoming as it is beautiful.",
-    },
-    {
-      title: "Commercial Properties",
-      image: "https://images.unsplash.com/photo-1554995207-c18c203602cb?q=80&w=2070&auto=format&fit=crop",
-      desc: "Hotels, resorts, and restaurants rely on GEBE for high-quality outdoor furniture that combines style, comfort, and durability. Our elegant outdoor patio furniture sets and sturdy outdoor lawn furniture are designed to enhance guest experiences by creating inviting spaces where comfort meets sophistication.",
-    },
-    {
-      title: "Event Spaces",
-      image: "https://images.unsplash.com/photo-1511795409834-ef04bbd61622?q=80&w=2070&auto=format&fit=crop",
-      desc: "GEBE outdoor furniture adds sophistication to events including weddings, corporate functions and social gatherings. Designed for both aesthetics and functionality, our outdoor furniture transforms any venue.",
+      image: "/gebe/17.webp",
     },
   ];
 
@@ -49,23 +31,21 @@ const GebeContent = () => {
     { title: "Seamless Integration", desc: "Designs that complement various architectural and landscaping styles." },
   ];
 
-  const WHY_ARQTRACE = [
-    { title: "Expert Guidance", desc: "Our professionals assist in selecting the best furniture solutions.", icon: Users },
-    { title: "Reliable Delivery", desc: "Timely efficient delivery and professional installation ensure hassle-free service.", icon: Truck },
-    { title: "Exceptional Support", desc: "Dedicated after-sales service for complete customer satisfaction.", icon: ShieldCheck },
-  ];
+  // Dynamically generate gallery paths from 1.webp to 17.webp
+  const GALLERY_IMAGES = Array.from({ length: 16 }, (_, i) => `/gebe/${i + 2}.webp`);
 
   return (
     <main>
+      {/* Hero Section */}
       <section
-        className="relative min-h-screen lg:min-h-162.5 w-full overflow-hidden flex items-center bg-[#2d1e18] select-none"
+        className="relative min-h-screen lg:min-h-162.5 w-full overflow-hidden flex items-center select-none"
         style={{
-          backgroundImage: "url('https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=1920,fit=crop/mk3yjJGoMeSGWZ6J/lumani-schuco-commercial-modern-indian-palace-Y4L8pOWxvNhBBx63.png')",
+          backgroundImage: "url('/gebe/12.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <div className="absolute inset-0 bg-[#2d1e18]/60" />
+        <div className="absolute inset-0 bg-[#2d1e18]/50" />
         <div className="container mx-auto px-6 lg:px-16 relative z-10 text-center">
           <motion.div initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7 }}>
             <div className="flex items-center justify-center gap-2 mb-5 mt-24 lg:mt-32">
@@ -84,12 +64,15 @@ const GebeContent = () => {
         </div>
       </section>
 
+      {/* Intro Section */}
       <section className="relative py-24 lg:py-32 bg-white border-b border-stone-100 select-none">
         <div className="container mx-auto px-6 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-14 lg:gap-20 items-center">
             <div className="lg:col-span-6 lg:order-2 space-y-6">
               <div className="space-y-2">
-                <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c] block">Best Outdoor Furniture Company</span>
+                <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c] block">
+                  Best Outdoor Furniture Company
+                </span>
                 <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] leading-[1.1] tracking-tight">
                   Premium Outdoor Patio Furniture Sets for Every Space
                 </h2>
@@ -103,7 +86,7 @@ const GebeContent = () => {
                   "Stylish & Ergonomic Designs",
                   "5-Year Warranty & Trusted Expertise",
                 ].map((item) => (
-                  <div key={item} className="flex items-center gap-1 py-2">
+                  <div key={item} className="flex items-center gap-3 py-1">
                     <div className="w-10 h-10 rounded-full bg-[#fbf9f4] flex items-center justify-center shrink-0 border border-stone-100">
                       <CheckCircle className="w-5 h-5 text-[#bd845c]" />
                     </div>
@@ -124,7 +107,7 @@ const GebeContent = () => {
               <div className="absolute -inset-4 bg-[#fbf9f4] -z-10 transform -rotate-1 translate-x-2" />
               <div className="overflow-hidden border border-stone-100 shadow-sm group bg-white">
                 <img
-                  src="/brand/gebe.webp"
+                  src="/gebe/1.webp"
                   alt="GEBE outdoor furniture"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
                 />
@@ -134,6 +117,7 @@ const GebeContent = () => {
         </div>
       </section>
 
+      {/* Why Choose Section (Centered Content) */}
       <section className="py-24 lg:py-32 bg-[#fbf9f4] select-none">
         <div className="container mx-auto px-6 lg:px-16">
           <div className="mb-20 text-center max-w-4xl mx-auto">
@@ -149,21 +133,18 @@ const GebeContent = () => {
 
           <div className="space-y-24 lg:space-y-28">
             {WHY_CHOOSE_GEBE.map((item, index) => (
-              <div key={item.title} className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
+              <div key={item.title} className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                 <div className={`lg:col-span-6 ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="aspect-4/3 overflow-hidden border border-stone-200 bg-white shadow-md">
                     <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                   </div>
                 </div>
 
-                <div className={`lg:col-span-6 space-y-6 ${index % 2 === 1 ? "lg:order-1" : ""}`}>
-                  <div className="flex items-center gap-2">
-                    <span className="text-[10px] font-sans font-bold tracking-[0.4em] text-[#bd845c] uppercase">Feature 0{index + 1}</span>
-                  </div>
+                <div className={`lg:col-span-6 space-y-6 text-center ${index % 2 === 1 ? "lg:order-1" : ""}`}>
                   <h3 className="text-2xl md:text-3xl font-serif font-bold text-[#2d1e18] tracking-tight">
                     {item.title}
                   </h3>
-                  <p className="text-stone-500 text-sm md:text-base font-sans leading-relaxed">
+                  <p className="text-stone-500 text-sm md:text-base font-sans leading-relaxed max-w-xl mx-auto">
                     {item.desc}
                   </p>
                 </div>
@@ -173,42 +154,7 @@ const GebeContent = () => {
         </div>
       </section>
 
-      <section className="py-24 lg:py-32 bg-white select-none border-t border-stone-100">
-        <div className="container mx-auto px-6 lg:px-16">
-          <div className="mb-20 text-center max-w-3xl mx-auto">
-            <div className="flex items-center justify-center gap-2 mb-4">
-              <span className="w-1.5 h-1.5 bg-[#bd845c]" />
-              <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c]">Applications</span>
-              <span className="w-1.5 h-1.5 bg-[#bd845c]" />
-            </div>
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] tracking-tight">
-              Applications of GEBE Outdoor Furniture
-            </h2>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 lg:gap-10">
-            {APPLICATIONS.map((app) => (
-              <div key={app.title} className="group bg-white flex flex-col h-full border border-stone-100 hover:border-stone-200 hover:shadow-xl transition-all duration-500">
-                <div className="aspect-4/3 overflow-hidden bg-stone-100 relative">
-                  <img src={app.image} alt={app.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-[#2d1e18]/10 group-hover:bg-transparent transition-colors duration-500" />
-                </div>
-                <div className="p-8 grow flex flex-col justify-between">
-                  <div className="space-y-4">
-                    <h3 className="text-lg font-serif font-bold text-[#2d1e18] group-hover:text-[#bd845c] transition-colors duration-300">
-                      {app.title}
-                    </h3>
-                    <p className="text-stone-500 text-xs font-sans leading-relaxed">
-                      {app.desc}
-                    </p>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
+      {/* Advantages Section */}
       <section className="py-24 lg:py-32 bg-[#fbf9f6] select-none border-y border-stone-200/40">
         <div className="container mx-auto px-6 lg:px-16">
           <div className="mb-20 text-center">
@@ -225,7 +171,9 @@ const GebeContent = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-stone-200 border border-stone-200 shadow-sm overflow-hidden">
             {ADVANTAGES.map((adv, idx) => (
               <div key={adv.title} className="bg-white p-8 min-h-50 hover:bg-[#fbf9f4]/60 transition-colors duration-300">
-                <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase mb-4">Advantage // 0{idx + 1}</span>
+                <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase mb-4">
+                  Advantage // 0{idx + 1}
+                </span>
                 <h4 className="text-lg font-serif font-bold text-[#2d1e18] mb-3">{adv.title}</h4>
                 <p className="text-stone-500 text-sm leading-relaxed">{adv.desc}</p>
               </div>
@@ -234,7 +182,39 @@ const GebeContent = () => {
         </div>
       </section>
 
-      
+      {/* Product Gallery Section */}
+      <section className="py-24 lg:py-32 bg-white select-none">
+        <div className="container mx-auto px-6 lg:px-16">
+          <div className="mb-16 text-center">
+            <div className="flex items-center justify-center gap-2 mb-4">
+              <span className="w-1.5 h-1.5 bg-[#bd845c]" />
+              <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c]">Collection</span>
+              <span className="w-1.5 h-1.5 bg-[#bd845c]" />
+            </div>
+            <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] tracking-tight">
+              GEBE Gallery
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+            {GALLERY_IMAGES.map((src, idx) => (
+              <div
+                key={idx}
+                className="overflow-hidden border border-stone-200/80 shadow-xs bg-stone-50 group aspect-square relative"
+              >
+                <img
+                  src={src}
+                  alt={`GEBE Collection Item ${idx + 1}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  loading="lazy"
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Contact Section */}
       <section className="py-24 lg:py-32 bg-linear-to-r from-[#2d1e18] to-[#3a2920] select-none">
         <div className="container mx-auto px-6 lg:px-16 text-center">
           <div className="flex items-center justify-center gap-2 mb-4">

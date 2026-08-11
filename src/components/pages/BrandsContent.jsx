@@ -30,7 +30,7 @@ const BrandsContent = () => {
       subtitle: "Premium Outdoor Furniture",
       description:
         "As part of our premium offerings, Arqtrace proudly brings to India the world-renowned GEBE German Outdoor Furniture. GEBE has become a symbol of style, strength, and sustainability in outdoor living. Crafted from the world's best materials such as Raucord German wicker, high-grade aluminum, and weather-resistant fabrics, GEBE furniture is built to withstand UV rays, water, extreme climates, and everyday use. From patio furniture sets and pool loungers to garden tables, chairs, and customized outdoor solutions, every piece reflects European craftsmanship and timeless design. GEBE combines premium quality, stylish ergonomic designs, and eco-friendly materials with long-term warranty assurance for complete peace of mind in both residential and commercial outdoor spaces.",
-      image: "/brand/gebe.webp",
+      image: "/gebe/18.webp",
       href: "/gebe",
       features: ["German Craftsmanship", "Weather Resistant", "Eco-Friendly", "Premium Materials"],
     },
