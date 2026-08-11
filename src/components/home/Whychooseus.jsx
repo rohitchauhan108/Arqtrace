@@ -165,7 +165,7 @@ const WhyChoose = () => {
               >
                 <div className="aspect-[3/4] overflow-hidden shadow-[0_32px_64px_-16px_rgba(0,0,0,0.2)] rounded-sm group">
                   <img
-                    src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=800&q=80"
+                    src="/project/p2/6.webp"
                     alt="Architecture"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                   />

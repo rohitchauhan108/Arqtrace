@@ -7,15 +7,15 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Hayar Centric",
+    title: "Hayar Agency",
     category: "Premium Windows",
-    image: "/project/hayat.webp",
+    image: "/brand/lumani.webp",
   },
   {
     title: "Lemon-Tree",
     // category: "Energy-Efficient Living",
     category: "Contemporary uPVC Window Systems",
-    image: "/project/lemon-tree.webp",
+    image: "/testimonial/puneet-sharma.webp",
   },
   {
     title: "Hunny Sethi Puneet Bhagat",
@@ -25,7 +25,7 @@ const projects = [
   {
     title: "Outdoor Furniture Collections",
     category: "Exterior Comfort",
-    image: "/brand/gebe.webp",
+    image: "/gebe/12.webp",
   },
 ];
 
@@ -87,12 +87,7 @@ const Projects = () => {
               </button>
             </div>
 
-            <Link href="/blog">
-              <Button className="border border-stone-300 hover:border-[#bd845c] text-[#2d1e18] hover:text-[#bd845c] bg-transparent hover:bg-transparent rounded-none px-6 py-5 text-xs font-bold tracking-widest uppercase flex items-center gap-3 transition-all duration-300 group">
-                View All
-                <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-              </Button>
-            </Link>
+           
           </div>
         </div>
 

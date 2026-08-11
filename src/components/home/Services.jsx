@@ -18,7 +18,7 @@ const services = [
     title: "UPVC Windows & Doors",
     description:
       "Energy-efficient and low-maintenance products that bring comfort, insulation, and elegance to every project.",
-    image: "/home/window-door.webp",
+    image: "/winda/3.webp",
     link: "/winda-upvc-windows",
   },
   {
