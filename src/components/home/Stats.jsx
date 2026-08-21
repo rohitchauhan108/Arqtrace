@@ -5,7 +5,7 @@ import { Users, Briefcase, Trophy } from "lucide-react";
 const statItems = [
   {
     icon: <Users className="w-6 h-6 stroke-[1.5]" />,
-    count: "14+",
+    count: "13+",
     label: "Years of Combined Expertise",
     bgWatermark: "Expertise",
   },

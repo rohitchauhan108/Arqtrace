@@ -102,7 +102,7 @@ const WhyChoose = () => {
                   </h3>
                 </div>
                 <p className="text-sm text-stone-500 leading-relaxed pl-17">
-                  Lumani • SCHUCO • Winda • Gebe
+                  Lumani Schüco • Winda • Gebe
                 </p>
               </div>
             </motion.div>

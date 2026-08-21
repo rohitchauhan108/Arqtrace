@@ -7,7 +7,7 @@ import Link from "next/link";
 
 const projects = [
   {
-    title: "Hayar Agency",
+    title: "HYATT REGENCY",
     category: "Premium Windows",
     image: "/brand/lumani.webp",
   },
@@ -18,7 +18,7 @@ const projects = [
     image: "/testimonial/puneet-sharma.webp",
   },
   {
-    title: "Hunny Sethi Puneet Bhagat",
+    title: "Residence, Mr. Hunny Sethi",
     category: "Aluminum Doors",
     image: "/project/hunny.webp",
   },

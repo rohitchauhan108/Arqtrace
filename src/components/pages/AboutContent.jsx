@@ -91,22 +91,25 @@ const AboutContent = () => {
               </div>
 
               <div className="space-y-4 max-w-xl">
-                <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
+                {/* <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
                   Arqtrace is a growing design-and-build partner for premium
                   architectural solutions, bringing together expertise in
                   aluminium, uPVC, partitions, and outdoor living. Our journey
                   is shaped by a simple belief: every space deserves products
                   that are beautiful, durable, and thoughtfully crafted.
+                </p> */}
+                <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
+                  Arqtrace is an all-in-one solution for premium aluminum and UPVC windows, doors and partitions and outdoor furniture. We strive to bring you nothing, but the best quality of products may it be for your everlasting home or your upcoming project.
                 </p>
 
-                <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
+                {/* <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans">
                   We are proud to bring together three specialized identities
                   under one vision — Lumani Schuco for aluminium doors and
                   windows, Winda for uPVC solutions, and Gebe for outdoor
                   furniture. Together, they allow us to offer complete solutions
                   for modern homes, villas, offices, and hospitality spaces with
                   quality, innovation, and long-term value.
-                </p>
+                </p> */}
 
                 <ul className="space-y-2 text-sm md:text-base text-stone-500 leading-relaxed font-sans">
                   <li className="flex items-start gap-2">
@@ -162,12 +165,12 @@ const AboutContent = () => {
             <div className="flex items-center gap-2">
               <span className="w-1.5 h-1.5 bg-[#bd845c]" />
               <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c]">
-                Work Process
+                Why Us?
               </span>
               <span className="w-1.5 h-1.5 bg-[#bd845c]" />
             </div>
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif font-bold text-[#2d1e18] tracking-tight max-w-2xl">
-              How Arqtrace Works
+              Why Choose ARQTRACE?
             </h2>
           </div>
 
@@ -287,13 +290,12 @@ const AboutContent = () => {
       </section>
 
       {/* Stats, Solutions & Metrics Block Section */}
-      <section
+      {/* <section
         className="py-24 lg:py-32  select-none border-t border-stone-100"
         style={{ background: "url(/bg-pattern.png)" }}
       >
         <div className="container mx-auto px-6 lg:px-16">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
-            {/* Left Collage Images Panel with Floating Box */}
             <div className="lg:col-span-6 relative grid grid-cols-12 gap-4 items-center">
               <div className="col-span-8 relative z-10">
                 <div className=" overflow-hidden shadow-xl border border-stone-200/20 bg-stone-100">
@@ -315,7 +317,6 @@ const AboutContent = () => {
                 </div>
               </div>
 
-              {/* Years Experience Geometric Overlay Card Box */}
               <div className="absolute bottom-16 -left-6 bg-[#bd845c] p-6 text-white shadow-2xl flex items-center gap-4 border border-white/10 z-20 transition-transform duration-500 hover:scale-105">
                 <h2 className="text-4xl md:text-5xl font-serif font-black tracking-tight leading-none border-r border-white/20 pr-4">
                   14+
@@ -326,7 +327,6 @@ const AboutContent = () => {
               </div>
             </div>
 
-            {/* Right Side Content Matrix Details */}
             <div className="lg:col-span-6 flex flex-col justify-center space-y-8 lg:pl-4">
               <div className="flex items-start gap-5">
                 <div className="flex items-center gap-2 pt-2 shrink-0 [writing-mode:vertical-lr] rotate-180">
@@ -385,7 +385,7 @@ const AboutContent = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* Partner Logos Marquee Section */}
       <section className="py-20 lg:py-24 bg-[#fbf9f4] relative overflow-hidden select-none">
