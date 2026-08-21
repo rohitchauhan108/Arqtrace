@@ -3,7 +3,14 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Button } from "@/components/ui/Button";
-import { Facebook, Instagram, ArrowRight, Play, ArrowLeft, Link } from "lucide-react";
+import {
+  Facebook,
+  Instagram,
+  ArrowRight,
+  Play,
+  ArrowLeft,
+  Link,
+} from "lucide-react";
 
 const SLIDES_DATA = [
   {
@@ -109,16 +116,14 @@ const Hero = () => {
                 {currentSlide.description}
               </p>
 
-              <div>
-                <Link href="/about">
-                  <Button className="bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-6 rounded-none text-xs font-bold tracking-widest uppercase flex items-center gap-4 transition-all group">
-                    Explore Arqtrace
-                    <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                </Link>
-              </div>
+              <a href="/about">
+                <button className="bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-6 rounded-none text-xs font-bold tracking-widest uppercase flex items-center gap-4 transition-all group">
+                  Explore Arqtrace
+                  <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+                </button>
+              </a>
             </motion.div>
-          </AnimatePresence>
+          </AnimatePresence>  
         </div>
 
         <div className="lg:col-span-4 relative flex justify-center items-center">
