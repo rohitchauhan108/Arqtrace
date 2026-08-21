@@ -12,10 +12,10 @@ const projects = [
     image: "/brand/lumani.webp",
   },
   {
-    title: "Lemon-Tree",
+    title: "Lemontree, Rishikesh ",
     // category: "Energy-Efficient Living",
     category: "Contemporary uPVC Window Systems",
-    image: "/testimonial/puneet-sharma.webp",
+    image: "/home/lemon-tree.jpg",
   },
   {
     title: "Residence, Mr. Hunny Sethi",
@@ -107,11 +107,11 @@ const Projects = () => {
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
               />
 
-              <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+              {/* <div className="absolute inset-0 bg-black/30 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
                 <div className="w-12 h-12 rounded-full bg-[#bd845c] text-white flex items-center justify-center transform scale-50 opacity-0 group-hover:scale-100 group-hover:opacity-100 transition-all duration-500 ease-out shadow-lg">
                   <Plus className="w-6 h-6" />
                 </div>
-              </div>
+              </div> */}
 
               <div className="absolute bottom-4 left-4 right-4 bg-white px-5 py-4 shadow-lg transition-all duration-500 group-hover:bg-[#2d1e18] z-10">
                 <p className="text-sm md:text-base font-serif font-bold text-[#2d1e18] truncate transition-colors duration-500 group-hover:text-white">
