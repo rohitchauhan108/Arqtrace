@@ -5,7 +5,7 @@ import About from "@/components/home/About";
 import Services from "@/components/home/Services";
 import Stats from "@/components/home/Stats";
 import Projects from "@/components/home/Projects";
-import Shop from "@/components/home/Shop";
+// import Shop from "@/components/home/Shop";
 import Testimonials from "@/components/home/Testimonials";
 import WhyChoose from "@/components/home/Whychooseus";
 
