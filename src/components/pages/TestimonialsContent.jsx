@@ -49,7 +49,7 @@ const testimonialsData = [
     name: "Ar. Manish Kala",
     role: "Principal Architect, Edifice Design Studio",
     text: "We chose Arqtrace Schuco to achieve sound insulation of up to 102 decibels, far surpassing the standard 32 decibels, while also executing a superbly designed facade. The attention to detail and execution quality is outstanding.",
-    image: "/project/p2/3.webp",
+    image: "/testimonial/manish-kala.webp",
     type: "image",
     rating: 5,
     location: "Dehradun, Uttarakhand",
@@ -59,7 +59,7 @@ const testimonialsData = [
     name: "Mr. Anshuman Banerjee",
     role: "Residence Owner, ATS Doon",
     text: "When I met with Mr. Puneet for discussing the installation of these windows, I was very happy because he was able to suggest me a lot of things which aesthetically met my requirements. The final result is beyond what I had imagined.",
-    image: "/project/p1/4.webp",
+    image: "/testimonial/anshuman.webp",
     type: "image",
     rating: 5,
     location: "Dehradun, Uttarakhand",
@@ -69,7 +69,7 @@ const testimonialsData = [
     name: "Mr. Harkaran Singh",
     role: "General Manager, Hyatt Regency",
     text: "Lumani Schüco has done a fantastic job in terms of understanding what we wanted and they've done a great job by amalgamating that design to our concept and adding on to the luxury of the hotel. Highly recommended for premium hospitality projects.",
-    image: "/project/lemon-tree.webp",
+    image: "/testimonial/hyatt.webp",
     type: "image",
     rating: 5,
     location: "Dehradun, Uttarakhand",
@@ -308,13 +308,7 @@ const TestimonialsContent = () => {
                         {t.location}
                       </p>
                     </div>
-                    <div className="w-12 h-12 rounded-full overflow-hidden border-2 border-white shadow-md shrink-0 bg-stone-200">
-                      <img
-                        src={t.image}
-                        alt={t.name}
-                        className="w-full h-full object-cover"
-                      />
-                    </div>
+                    
                   </div>
                 </div>
               </motion.div>
@@ -323,47 +317,7 @@ const TestimonialsContent = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section
-        className="relative py-24 lg:py-32 overflow-hidden select-none"
-        style={{
-          backgroundImage: "url('/contact-bg.png')",
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-      >
-        <div className="absolute inset-0 bg-[#2d1e18]/85" />
-        <div className="container mx-auto px-6 lg:px-16 relative z-10 text-center">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <span className="w-1.5 h-1.5 bg-[#bd845c]" />
-            <span className="text-[10px] font-sans font-bold uppercase tracking-[0.4em] text-[#bd845c]">
-              Let&apos;s Talk
-            </span>
-            <span className="w-1.5 h-1.5 bg-[#bd845c]" />
-          </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-serif font-bold text-white mb-6 max-w-4xl mx-auto leading-[1.15]">
-            Ready to Start Your Project With Us?
-          </h2>
-          <p className="text-white/70 text-base md:text-lg max-w-2xl mx-auto mb-10 font-sans leading-relaxed">
-            Join the hundreds of happy clients who&apos;ve transformed their spaces with
-            Arqtrace. Get a free consultation today.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a
-              href="/contact"
-              className="inline-flex items-center justify-center gap-3 bg-[#bd845c] hover:bg-[#a6704c] text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition-all duration-300 shadow-lg hover:shadow-xl"
-            >
-              Get Free Consultation
-            </a>
-            <a
-              href="tel:+917888864955"
-              className="inline-flex items-center justify-center gap-3 bg-transparent border border-white/30 hover:border-white hover:bg-white/10 text-white px-8 py-4 text-xs font-bold tracking-widest uppercase transition-all duration-300"
-            >
-              Call +91 78888 64955
-            </a>
-          </div>
-        </div>
-      </section>
+  
     </>
   );
 };
