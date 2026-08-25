@@ -2,7 +2,8 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: "Arqtrace Lumani Schuco Aluminium Windows and Doors | Premium Aluminium Systems",
+  title:
+    "Arqtrace Lumani Schuco Aluminium Windows and Doors | Premium Aluminium Systems",
   description:
     "Discover Arqtrace Lumani Schuco aluminium windows and doors with advanced German technology, superior insulation, security, and modern design for homes and commercial spaces.",
 };
@@ -38,11 +39,12 @@ export default function LumaniSchucoAluminiumWindowsPage() {
                 Arqtrace: Premium Lumani Schuco Aluminium Windows and Doors
               </h1>
               <p className="text-stone-600 leading-relaxed">
-                When it comes to modern architecture, nothing defines style, durability, and
-                efficiency better than high-quality windows and doors. At Arqtrace, we
-                specialise in providing Lumani Schuco Aluminium Windows and Doors, designed to
-                enhance both residential and commercial spaces with a perfect blend of aesthetics
-                and performance.
+                When it comes to modern architecture, nothing defines style,
+                durability, and efficiency better than high-quality windows and
+                doors. At Arqtrace, we specialise in providing Lumani Schuco
+                Aluminium Windows and Doors, designed to enhance both
+                residential and commercial spaces with a perfect blend of
+                aesthetics and performance.
               </p>
             </div>
 
@@ -50,7 +52,9 @@ export default function LumaniSchucoAluminiumWindowsPage() {
               {highlights.map((item) => (
                 <div key={item} className="flex items-start gap-2">
                   <CheckCircle2 className="w-4 h-4 mt-0.5 text-[#bd845c] shrink-0" />
-                  <p className="text-sm text-stone-700 leading-relaxed">{item}</p>
+                  <p className="text-sm text-stone-700 leading-relaxed">
+                    {item}
+                  </p>
                 </div>
               ))}
             </div>
@@ -67,105 +71,159 @@ export default function LumaniSchucoAluminiumWindowsPage() {
       </section>
 
       <section className="py-16 lg:py-20">
-  <div className="container mx-auto px-6 lg:px-16">
-    <div className="max-w-6xl mx-auto space-y-10">
+        <div className="container mx-auto px-6 lg:px-16">
+          <div className="max-w-6xl mx-auto space-y-16">
+            {/* Why Choose */}
+            <article className="bg-white border border-stone-200 shadow-sm p-8 lg:p-10">
+              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div className="lg:col-span-7 space-y-5">
+                  <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold">
+                    Why Choose Aluminium for Windows and Doors?
+                  </h2>
 
-      {/* Why Choose */}
-      <article className="bg-white border border-stone-200 shadow-sm p-8 lg:p-10">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold mb-5">
-          Why Choose Aluminium for Windows and Doors?
-        </h2>
+                  <p className="text-stone-700 leading-8">
+                    Aluminium has become the preferred material for architects,
+                    homeowners, and builders worldwide. Unlike traditional wood
+                    or uPVC, aluminium offers unmatched strength, slimmer
+                    profiles, and exceptional durability. With premium Aluminium
+                    Windows and Doors, you enjoy superior insulation, enhanced
+                    security, and timeless aesthetics without compromising on
+                    performance.
+                  </p>
 
-        <p className="text-stone-700 leading-8">
-          Aluminium has become the preferred material for architects,
-          homeowners, and builders worldwide. Unlike traditional wood or
-          uPVC, aluminium offers unmatched strength, slimmer profiles, and
-          exceptional durability. With premium Aluminium Windows and Doors,
-          you enjoy superior insulation, enhanced security, and timeless
-          aesthetics without compromising on performance.
-        </p>
+                  <p className="text-stone-700 leading-8">
+                    As one of the trusted Aluminium window manufacturers,
+                    Arqtrace ensures every frame is engineered with precision
+                    and built to meet international quality standards. Whether
+                    for a contemporary home, luxury villa, or large-scale
+                    commercial project, our systems are designed to deliver
+                    elegance, functionality, and long-lasting value.
+                  </p>
+                </div>
+                <div className="lg:col-span-5">
+                  <div className="border border-stone-200 p-2 bg-[#fbf9f4]">
+                    <img
+                      src="/lumani/18.webp"
+                      alt="Modern aluminium architectural windows"
+                      className="w-full h-72 object-cover"
+                    />
+                  </div>
+                </div>
+              </div>
+            </article>
 
-        <p className="text-stone-700 leading-8 mt-5">
-          As one of the trusted Aluminium window manufacturers, Arqtrace
-          ensures every frame is engineered with precision and built to meet
-          international quality standards. Whether for a contemporary home,
-          luxury villa, or large-scale commercial project, our systems are
-          designed to deliver elegance, functionality, and long-lasting
-          value.
-        </p>
-      </article>
+            {/* Two Column Cards */}
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              <article className="bg-white border border-stone-200 shadow-sm p-8 flex flex-col justify-between">
+                <div>
+                  <div className="border border-stone-200 p-2 bg-[#fbf9f4] mb-6">
+                    <img
+                      src="/lumani/15.webp"
+                      alt="The Lumani Schuco Advantage"
+                      className="w-full h-56 object-cover"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-serif font-bold mb-5">
+                    The Lumani Schuco Advantage
+                  </h3>
 
-      {/* Two Column Cards */}
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  <p className="text-stone-700 leading-8">
+                    The Lumani Schuco range is globally recognized for
+                    innovation, engineering excellence, and premium German
+                    technology. Every Aluminium Door and Window system is
+                    designed to provide thermal insulation, superior
+                    soundproofing, enhanced security, and outstanding
+                    durability, making it ideal for modern architecture.
+                  </p>
 
-        <article className="bg-white border border-stone-200 shadow-sm p-8">
-          <h3 className="text-2xl font-serif font-bold mb-5">
-            The Lumani Schuco Advantage
-          </h3>
+                  <p className="text-stone-700 leading-8 mt-5">
+                    Our expertise as Aluminium Door manufacturers enables us to
+                    deliver completely customized solutions that integrate
+                    seamlessly with contemporary architectural designs. From
+                    minimalist sliding systems to expansive panoramic windows,
+                    we create elegant spaces that redefine modern living.
+                  </p>
+                </div>
+              </article>
 
-          <p className="text-stone-700 leading-8">
-            The Lumani Schuco range is globally recognized for innovation,
-            engineering excellence, and premium German technology. Every
-            Aluminium Door and Window system is designed to provide thermal
-            insulation, superior soundproofing, enhanced security, and
-            outstanding durability, making it ideal for modern architecture.
-          </p>
+              <article className="bg-white border border-stone-200 shadow-sm p-8 flex flex-col justify-between">
+                <div>
+                  <div className="border border-stone-200 p-2 bg-[#fbf9f4] mb-6">
+                    <img
+                      src="/lumani/17.webp"
+                      alt="Commitment to Quality and Service"
+                      className="w-full h-56 object-cover"
+                    />
+                  </div>
+                  <h3 className="text-2xl font-serif font-bold mb-5">
+                    Commitment to Quality and Service
+                  </h3>
 
-          <p className="text-stone-700 leading-8 mt-5">
-            Our expertise as Aluminium Door manufacturers enables us to
-            deliver completely customized solutions that integrate seamlessly
-            with contemporary architectural designs. From minimalist sliding
-            systems to expansive panoramic windows, we create elegant spaces
-            that redefine modern living.
-          </p>
-        </article>
+                  <p className="text-stone-700 leading-8">
+                    At Arqtrace, quality is more than a promise—it is the
+                    foundation of everything we deliver. We stand apart from
+                    other Aluminium window manufacturers through meticulous
+                    craftsmanship, sustainable manufacturing practices, and
+                    uncompromising attention to detail, ensuring every
+                    installation exceeds expectations.
+                  </p>
 
-        <article className="bg-white border border-stone-200 shadow-sm p-8">
-          <h3 className="text-2xl font-serif font-bold mb-5">
-            Commitment to Quality and Service
-          </h3>
+                  <p className="text-stone-700 leading-8 mt-5">
+                    As experienced Aluminium Door manufacturers, we combine
+                    architectural elegance with exceptional functionality. Every
+                    installation is completed with precision to provide smooth
+                    operation, energy efficiency, maximum security, and a
+                    flawless finish that lasts for decades.
+                  </p>
+                </div>
+              </article>
+            </div>
 
-          <p className="text-stone-700 leading-8">
-            At Arqtrace, quality is more than a promise—it is the foundation
-            of everything we deliver. We stand apart from other Aluminium
-            window manufacturers through meticulous craftsmanship,
-            sustainable manufacturing practices, and uncompromising attention
-            to detail, ensuring every installation exceeds expectations.
-          </p>
+            {/* CTA */}
+            <article className="relative overflow-hidden bg-gradient-to-br from-[#2d1e18] via-[#241712] to-[#1a100c] text-white shadow-2xl p-8 lg:p-14 border border-[#bd845c]/20 rounded-none">
+              {/* Decorative background accent badge */}
+              <div className="absolute top-0 right-0 w-64 h-64 bg-[#bd845c]/5 rounded-full blur-3xl pointer-events-none" />
 
-          <p className="text-stone-700 leading-8 mt-5">
-            As experienced Aluminium Door manufacturers, we combine
-            architectural elegance with exceptional functionality. Every
-            installation is completed with precision to provide smooth
-            operation, energy efficiency, maximum security, and a flawless
-            finish that lasts for decades.
-          </p>
-        </article>
+              <div className="relative grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-14 items-center">
+                <div className="lg:col-span-8 space-y-6">
+                  <span className="inline-block text-[10px] uppercase tracking-[0.4em] font-bold text-[#bd845c] bg-[#bd845c]/10 px-3 py-1 border border-[#bd845c]/30">
+                    Architectural Excellence
+                  </span>
 
-      </div>
+                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-serif font-bold tracking-tight text-white leading-[1.15]">
+                    Transforming Spaces with Aluminium Windows and Doors
+                  </h2>
 
-      {/* CTA */}
-      <article className="bg-[#2d1e18] text-white shadow-sm p-8 lg:p-10">
-        <h2 className="text-2xl md:text-3xl lg:text-4xl font-serif font-bold mb-5">
-          Transforming Spaces with Aluminium Windows and Doors
-        </h2>
+                  <p className="text-stone-200 text-base lg:text-lg leading-relaxed font-light">
+                    Choosing Arqtrace means investing in premium craftsmanship,
+                    innovative German engineering, and architectural excellence.
+                    As one of the leading Aluminium window manufacturers and
+                    trusted Aluminium Door manufacturers, we deliver tailor-made
+                    solutions that combine aesthetics, durability, and
+                    performance. Whether you are designing a luxury residence,
+                    renovating a modern home, or developing a commercial
+                    landmark, Lumani Schuco systems are built to stand the test
+                    of time while elevating every space they become a part of.
+                  </p>
+                </div>
 
-        <p className="text-stone-200 leading-8">
-          Choosing Arqtrace means investing in premium craftsmanship,
-          innovative German engineering, and architectural excellence. As one
-          of the leading Aluminium window manufacturers and trusted
-          Aluminium Door manufacturers, we deliver tailor-made solutions that
-          combine aesthetics, durability, and performance. Whether you are
-          designing a luxury residence, renovating a modern home, or
-          developing a commercial landmark, Lumani Schuco systems are built
-          to stand the test of time while elevating every space they become a
-          part of.
-        </p>
-      </article>
-
-    </div>
-  </div>
-</section>
+                <div className="lg:col-span-4">
+                  <div className="relative group p-2 bg-[#3a2720]/80 backdrop-blur-sm border border-[#bd845c]/40 shadow-2xl transition-transform duration-500 hover:scale-[1.01]">
+                    <div className="absolute -inset-1 bg-gradient-to-r from-[#bd845c] to-transparent opacity-30 blur group-hover:opacity-60 transition duration-500"></div>
+                    <div className="relative overflow-hidden">
+                      <img
+                        src="/lumani/16.webp"
+                        alt="Transforming Spaces with Aluminium Windows and Doors"
+                        className="w-full h-72 lg:h-80 object-cover transform transition-transform duration-700 group-hover:scale-105"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
