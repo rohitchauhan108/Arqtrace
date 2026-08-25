@@ -19,7 +19,7 @@ const GebeContent = () => {
     },
     {
       title: "5-Year Warranty & Trusted Expertise",
-      desc: "With 15 years of industry experience and a solid 5-year warranty, GEBE stands behind every piece of furniture we create. As the best outdoor furniture company, we are dedicated to delivering products that are not only stylish but also built to last. Whether it is our elegant garden furniture table and chairs or other outdoor essentials, you can trust GEBE to bring durability and timeless appeal to your outdoor space.",
+      desc: "With 13 years of industry experience and a solid 5-year warranty, GEBE stands behind every piece of furniture we create. As the best outdoor furniture company, we are dedicated to delivering products that are not only stylish but also built to last. Whether it is our elegant garden furniture table and chairs or other outdoor essentials, you can trust GEBE to bring durability and timeless appeal to your outdoor space.",
       image: "/gebe/17.webp",
     },
   ];
@@ -78,7 +78,7 @@ const GebeContent = () => {
                 </h2>
               </div>
               <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans max-w-xl">
-                With 15 years of experience, we specialize in outdoor patio furniture sets, garden tables and chairs, and lawn furniture that stand strong against all weather conditions while elevating the beauty of your outdoor space. As the best outdoor furniture company, every item we create reflects innovation, expert craftsmanship, and lasting quality you can trust.
+                With 13 years of experience, we specialize in outdoor patio furniture sets, garden tables and chairs, and lawn furniture that stand strong against all weather conditions while elevating the beauty of your outdoor space. As the best outdoor furniture company, every item we create reflects innovation, expert craftsmanship, and lasting quality you can trust.
               </p>
               <div className="space-y-4 pt-2 pb-2 border-y border-stone-100">
                 {[

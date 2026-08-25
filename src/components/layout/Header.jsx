@@ -22,6 +22,7 @@ const NAV_LINKS = [
   },
   { name: "GEBE", href: "/gebe" },
   { name: "Blog", href: "/blog" },
+  { name: "Testimonials", href: "/testimonials" },
   { name: "Contact", href: "/contact" },
 ];
 
