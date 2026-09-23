@@ -20,9 +20,9 @@ const LumaniSchucoContent = () => {
   ];
 
   const APPLICATIONS = [
-    { title: "Residential Spaces", image: "/lumani/4.webp", desc: "Upgrade your home with Lumani Schüco’s beautifully crafted Aluminum and glass windows and doors, designed to combine lasting durability with stunning aesthetics. Their energy-efficient features not only help regulate indoor temperatures but also reduce outside noise for a peaceful living space. As trusted Aluminum Door manufacturers, Lumani Schüco ensures each product enhances both security and style, creating a comfortable and safe environment for you and your family." },
-    { title: "Commercial Buildings", image: "/lumani/9.webp", desc: "For commercial projects, Lumani Schüco delivers strong and stylish solutions that perfectly balance design with durability. As leading Aluminum window manufacturers and Aluminum Door manufacturers, they provide products ideal for offices, retail spaces, and hotels. These windows and doors not only boost energy efficiency but also add a sleek, modern touch to any commercial building." },
-    { title: "Luxury Projects", image: "/lumani/6.webp", desc: "Lumani Schüco is the go-to choice for upscale residences, villas, and luxury resorts. Renowned among top Aluminum window manufacturers and Aluminum Door manufacturers, their premium aluminum and glass solutions beautifully enhance architectural design while delivering outstanding performance. These products effortlessly combine luxury with durability to meet the highest standards in both style and functionality." },
+    { title: "Residential Spaces", image: "/lumani/4.webp", desc: "Upgrade your home with Lumani Schüco’s beautifully crafted Aluminum and glass windows and doors, designed to combine lasting durability with stunning aesthetics. Their energy-efficient features not only help regulate indoor temperatures but also reduce outside noise for a peaceful living space. Lumani Schüco ensures each product enhances both security and style, creating a comfortable and safe environment for you and your family." },
+    { title: "Commercial Buildings", image: "/lumani/9.webp", desc: "For commercial projects, Lumani Schüco delivers strong and stylish solutions that perfectly balance design with durability.Lumani Schüco provide products ideal for offices, retail spaces, and hotels. These windows and doors not only boost energy efficiency but also add a sleek, modern touch to any commercial building." },
+    { title: "Luxury Projects", image: "/lumani/6.webp", desc: "Lumani Schüco is the go-to choice for upscale residences, villas, and luxury resorts. Renowned as the go to choice for 5 star hotels and luxury resorts and villas, their premium aluminum and glass solutions beautifully enhance architectural design while delivering outstanding performance. These products effortlessly combine luxury with durability to meet the highest standards in both style and functionality." },
   ];
 
   const WHY_ARQTRACE = [
@@ -42,14 +42,14 @@ const LumaniSchucoContent = () => {
     { 
       id: "door-prem",
       title: "Premium Aluminum Doors", 
-      desc: "Lumani Schüco doors are the perfect blend of strength, style, and security—crafted to complement both modern and traditional spaces. As part of our premium range of Aluminum Windows and Doors, they offer exceptional durability and a sleek finish. Trusted among leading Aluminum Door manufacturers, Lumani Schüco designs feature robust construction and advanced locking systems, with customization options to suit any architectural vision.", 
+      desc: "Lumani Schüco doors are the perfect blend of strength, style, and security—crafted to complement both modern and traditional spaces. As part of our premium range of Aluminum Windows and Doors, they offer exceptional durability and a sleek finish. Lumani Schüco designs feature robust construction and advanced locking systems, with customization options to suit any architectural vision.", 
       image: "/lumani/3.webp",
       specs: { profile: "90mm Depth", insulation: "Ud up to 0.80 W/(m²K)", glass: "Integrated Smart Security", resistance: "RC2 / RC3 Certified" }
     },
     { 
       id: "glass-comb",
       title: "Aluminum and Glass Windows", 
-      desc: "Lumani Schüco’s sleek Aluminum Windows and Doors bring a perfect mix of elegance and functionality to any setting. With double and triple glazing options, they offer excellent insulation to help lower energy bills. The UV-resistant glass protects interiors from sun damage while keeping spaces comfortable year-round. Recognized among top Aluminum window manufacturers, Lumani Schüco delivers contemporary designs that enhance both residential and commercial environments.", 
+      desc: "Lumani Schüco’s sleek Aluminum Windows and Doors bring a perfect mix of elegance and functionality to any setting. With double and triple glazing options, they offer excellent insulation to help lower energy bills. The UV-resistant glass protects interiors from sun damage while keeping spaces comfortable year-round. Lumani Schüco delivers contemporary designs that enhance both residential and commercial environments.", 
       image: "/lumani/pre-window.webp",
       specs: { profile: "65mm Slimline", insulation: "Uf up to 1.1 W/(m²K)", glass: "UV-Shield Acoustic Laminate", resistance: "Class E900 Water Tightness" }
     },
@@ -278,10 +278,10 @@ const LumaniSchucoContent = () => {
             {ADVANTAGES.map((adv, idx) => (
               <div 
                 key={idx} 
-                className="bg-white p-10 flex flex-col justify-between min-h-50 hover:bg-[#fbf9f4]/50 transition-colors duration-300 relative group"
+                className="bg-white p-10 flex flex-col justify-between min-h-44 hover:bg-[#fbf9f4]/50 transition-colors duration-300 relative group"
               >
                 <div className="space-y-4">
-                  <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase">Feature // 0{idx + 1}</span>
+                  {/* <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase">Feature // 0{idx + 1}</span> */}
                   <h4 className="text-lg font-serif font-bold text-[#2d1e18] group-hover:text-[#bd845c] transition-colors duration-300">
                     {adv.title}
                   </h4>

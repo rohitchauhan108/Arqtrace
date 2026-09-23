@@ -151,7 +151,7 @@ const AboutContent = () => {
 
       {/* Work Process Section */}
       <section
-        className="relative py-24 mb-20 lg:py-32 overflow-hidden select-none bg-stone-50"
+        className="relative py-24  lg:py-32 overflow-hidden select-none bg-stone-50"
         style={{
           backgroundImage: "url('/about-section/1.jpg')",
           backgroundSize: "cover",
@@ -187,9 +187,7 @@ const AboutContent = () => {
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#bd845c] text-white px-4 py-1 rounded-full text-[10px] font-sans font-bold uppercase tracking-widest shadow-md border border-white/20">
-                  Step 01
-                </div>
+               
               </div>
               <div className="mt-8 space-y-2 max-w-[240px]">
                 <h3 className="text-lg font-serif font-bold text-[#2d1e18] transition-colors duration-300 group-hover:text-[#bd845c]">
@@ -215,9 +213,7 @@ const AboutContent = () => {
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#bd845c] text-white px-4 py-1 rounded-full text-[10px] font-sans font-bold uppercase tracking-widest shadow-md border border-white/20">
-                  Step 02
-                </div>
+              
               </div>
               <div className="mt-8 space-y-2 max-w-[240px]">
                 <h3 className="text-lg font-serif font-bold text-[#2d1e18] transition-colors duration-300 group-hover:text-[#bd845c]">
@@ -244,9 +240,7 @@ const AboutContent = () => {
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#bd845c] text-white px-4 py-1 rounded-full text-[10px] font-sans font-bold uppercase tracking-widest shadow-md border border-white/20">
-                  Step 03
-                </div>
+               
               </div>
               <div className="mt-8 space-y-2 max-w-[240px]">
                 <h3 className="text-lg font-serif font-bold text-[#2d1e18] transition-colors duration-300 group-hover:text-[#bd845c]">
@@ -271,9 +265,7 @@ const AboutContent = () => {
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                   />
                 </div>
-                <div className="absolute -bottom-2 left-1/2 -translate-x-1/2 bg-[#bd845c] text-white px-4 py-1 rounded-full text-[10px] font-sans font-bold uppercase tracking-widest shadow-md border border-white/20">
-                  Step 04
-                </div>
+             
               </div>
               <div className="mt-8 space-y-2 max-w-[240px]">
                 <h3 className="text-lg font-serif font-bold text-[#2d1e18] transition-colors duration-300 group-hover:text-[#bd845c]">
