@@ -15,7 +15,7 @@ const ContactContent = () => {
   const [status, setStatus] = useState("idle");
   const [errorMsg, setErrorMsg] = useState("");
 
-  const WEB3FORM_KEY = process.env.NEXT_PUBLIC_WEB3FORM_ACCESS_KEY;
+  const WEB3FORM_KEY = "636a845e-a78e-4729-b262-a0b43865efa8";
 
   const handleChange = (e) => {
     const { name, value } = e.target;
