@@ -9,23 +9,23 @@ const GebeContent = () => {
   const WHY_CHOOSE_GEBE = [
     {
       title: "Superior Craftsmanship & Durability",
-      desc: "GEBE outdoor furniture is built to stand the test of time. Crafted from high-quality, weather-resistant materials, each piece is designed to withstand UV rays, water damage, and tough outdoor conditions. As the best outdoor furniture company, we take pride in offering durable and stylish outdoor lawn furniture that keeps your space looking great season after season.",
+      desc: "GEBE outdoor furniture is built to stand the test of time. Crafted from high-quality, weather-resistant materials, each piece is designed to withstand UV rays, water damage, and tough outdoor conditions. We take pride in offering durable and stylish outdoor lawn furniture that keeps your space looking great season after season.",
       image: "/gebe/3.webp",
     },
     {
       title: "Stylish & Ergonomic Designs",
-      desc: "Our collections are thoughtfully crafted to suit every taste, featuring modern, classic, and customized styles. Designed with ergonomics in mind, our pieces promise maximum comfort, making every outdoor space warm, inviting, and effortlessly stylish. As the best outdoor furniture company, we take pride in offering premium outdoor patio furniture sets that transform your backyard into a true retreat.",
+      desc: "Our collections are thoughtfully crafted to suit every taste, featuring modern, classic, and customized styles. Designed with ergonomics in mind, our pieces promise maximum comfort, making every outdoor space warm, inviting, and effortlessly stylish. We take pride in offering premium outdoor patio furniture sets that transform your backyard into a true retreat.",
       image: "/gebe/12.webp",
     },
     {
       title: "5-Year Warranty & Trusted Expertise",
-      desc: "With 13 years of industry experience and a solid 5-year warranty, GEBE stands behind every piece of furniture we create. As the best outdoor furniture company, we are dedicated to delivering products that are not only stylish but also built to last. Whether it is our elegant garden furniture table and chairs or other outdoor essentials, you can trust GEBE to bring durability and timeless appeal to your outdoor space.",
+      desc: "With 13 years of industry experience and a solid 5-year warranty, GEBE stands behind every piece of furniture we create. We are dedicated to delivering products that are not only stylish but also built to last. Whether it is our elegant garden furniture table and chairs or other outdoor essentials, you can trust GEBE to bring durability and timeless appeal to your outdoor space.",
       image: "/gebe/17.webp",
     },
   ];
 
   const ADVANTAGES = [
-    { title: "Premium Quality", desc: "High-grade weather-resistant materials ensure lasting durability." },
+    { title: "Premium Quality", desc: "High-grade weather-resistant and waterproof materials ensure lasting durability." },
     { title: "Customizable Solutions", desc: "Tailored designs to suit unique outdoor settings." },
     { title: "Eco-Friendly Commitment", desc: "Sustainable materials and manufacturing processes reduce environmental impact." },
     { title: "Seamless Integration", desc: "Designs that complement various architectural and landscaping styles." },
@@ -57,7 +57,7 @@ const GebeContent = () => {
               Excellence in Outdoor Furniture Solutions
             </h1>
             <p className="text-stone-200 text-sm md:text-base mb-10 max-w-3xl mx-auto leading-relaxed font-sans">
-              GEBE is known as the best outdoor furniture company, offering premium outdoor pieces built for durability, style, and everyday functionality.
+              GEBE offers premium outdoor furniture built for durability, style, and everyday functionality.
             </p>
             <div className="w-px h-12 bg-linear-to-b from-[#bd845c] to-transparent mx-auto" />
           </motion.div>
@@ -78,7 +78,7 @@ const GebeContent = () => {
                 </h2>
               </div>
               <p className="text-stone-500 text-sm md:text-base leading-relaxed font-sans max-w-xl">
-                With 13 years of experience, we specialize in outdoor patio furniture sets, garden tables and chairs, and lawn furniture that stand strong against all weather conditions while elevating the beauty of your outdoor space. As the best outdoor furniture company, every item we create reflects innovation, expert craftsmanship, and lasting quality you can trust.
+                With 13 years of experience, we specialize in outdoor patio furniture sets, garden tables and chairs, and lawn furniture that stand strong against all weather conditions while elevating the beauty of your outdoor space. Every item we create reflects innovation, expert craftsmanship, and lasting quality you can trust.
               </p>
               <div className="space-y-4 pt-2 pb-2 border-y border-stone-100">
                 {[
@@ -170,10 +170,8 @@ const GebeContent = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-px bg-stone-200 border border-stone-200 shadow-sm overflow-hidden">
             {ADVANTAGES.map((adv, idx) => (
-              <div key={adv.title} className="bg-white p-8 min-h-50 hover:bg-[#fbf9f4]/60 transition-colors duration-300">
-                <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase mb-4">
-                  Advantage // 0{idx + 1}
-                </span>
+              <div key={adv.title} className="bg-white p-8 min-h-44 hover:bg-[#fbf9f4]/60 transition-colors duration-300">
+                
                 <h4 className="text-lg font-serif font-bold text-[#2d1e18] mb-3">{adv.title}</h4>
                 <p className="text-stone-500 text-sm leading-relaxed">{adv.desc}</p>
               </div>

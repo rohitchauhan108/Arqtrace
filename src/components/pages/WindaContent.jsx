@@ -47,6 +47,7 @@ const WindaContent = () => {
     { title: "Energy-Efficient Designs", desc: "Reduce heating and cooling costs." },
     { title: "Eco-Friendly Materials", desc: "Contribute to sustainable living." },
     { title: "Advanced Manufacturing Technology", desc: "Guarantees precision and longevity." },
+    {title : "Resistant to Color Fading", desc: "Maintains color integrity over time."},
   ];
 
   const WHY_ARQTRACE = [
@@ -197,8 +198,8 @@ const WindaContent = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-px bg-stone-200 border border-stone-200 shadow-sm overflow-hidden">
             {ADVANTAGES.map((adv, idx) => (
-              <div key={adv.title} className="bg-white p-10 min-h-50 hover:bg-[#fbf9f4]/60 transition-colors duration-300">
-                <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase mb-4">Feature // 0{idx + 1}</span>
+              <div key={adv.title} className="bg-white p-10 min-h-44 hover:bg-[#fbf9f4]/60 transition-colors duration-300">
+                {/* <span className="text-[10px] font-sans font-bold tracking-wider text-stone-400 block uppercase mb-4">Feature // 0{idx + 1}</span> */}
                 <h4 className="text-lg font-serif font-bold text-[#2d1e18] mb-3">{adv.title}</h4>
                 <p className="text-stone-500 text-sm leading-relaxed">{adv.desc}</p>
               </div>
