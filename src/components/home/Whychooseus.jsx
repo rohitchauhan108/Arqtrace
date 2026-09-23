@@ -182,7 +182,7 @@ const WhyChoose = () => {
                 >
                   <div className="relative">
                     <span className="text-6xl md:text-7xl font-serif font-black tracking-tighter leading-none text-white/95">
-                      13
+                      13 +
                     </span>
                     <div className="absolute -top-2 -right-2 w-4 h-4 bg-[#bd845c] rounded-full animate-pulse" />
                   </div>

@@ -10,6 +10,7 @@ const NAV_LINKS = [
   { name: "Home", href: "/" },
   { name: "About", href: "/about" },
   { name: "Brands", href: "/brands" },
+  { name: "Partitions & Railing", href: "/partitions-railing" },
   {
     name: "Lumani Schuco",
     href: "/lumani-schuco",

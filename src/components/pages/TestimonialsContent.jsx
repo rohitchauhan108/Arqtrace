@@ -27,12 +27,12 @@ const testimonialsData = [
   {
     id: 3,
     name: "Mr. Puneet Sharma",
-    role: "Lemon Tree Hotel",
+    role: "Hotel Lemon Tree",
     text: "First time hum uPVC se switchover kare Schüco main, Schüco ka experience hume accha laga. Expensive hai par hume samajh main aaya ki jo expense humne kiya hai woh worthful hai. Quality, finish aur installation sab top-notch hai.",
-    image: "/testimonial/puneet-sharma.webp",
+    image: "/testimonial/puneet-sharma.jpeg",
     type: "image",
     rating: 5,
-    location: "Mussoorie, Uttarakhand",
+    location: "Rishikesh, Uttarakhand",
   },
   {
     id: 4,
@@ -79,19 +79,19 @@ const testimonialsData = [
 const videoTestimonialsData = [
   {
     id: 1,
-    client: "Nikhil Sobti",
+    client: "Mr. Nitin Sobti",
     videoUrl:
       "https://res.cloudinary.com/dxfuimb1a/video/upload/v1787642877/Mr_Nitin_Sobti_ywq7nw.mp4",
   },
   {
     id: 2,
-    client: "Naman Gupta",
+    client: "Mr. Naman Gupta",
     videoUrl:
       "https://res.cloudinary.com/dxfuimb1a/video/upload/v1787642833/Mr._Naman_Gupta_uwygsx.mp4",
   },
   {
     id: 3,
-    client: "Diablo Ar Manish Kala Stallin Commercial Doon Extended",
+    client: "Diablo, Stallion Commercials Ar. Manish Kala",
     videoUrl:
       "https://res.cloudinary.com/dxfuimb1a/video/upload/v1787642791/Diablo_Ar._Manish_Kala_Stallion_Commercials_Doon_EXTENDED_d0njlm.mp4",
   },
@@ -115,13 +115,13 @@ const videoTestimonialsData = [
   },
   {
     id: 7,
-    client: "Mr Anshuman",
+    client: "Mr. Anshuman Banerjee",
     videoUrl:
       "https://res.cloudinary.com/dxfuimb1a/video/upload/v1787642750/Carbonado_Residence_Panipat_nfpxhr.mp4",
   },
   {
     id: 8,
-    client: "Dr Ak Singh",
+    client: "Ar. DK Singh",
     videoUrl:
       "https://res.cloudinary.com/dxfuimb1a/video/upload/v1787642730/Ar._D.K._Singh_ATS_Doon_z0v9ru.mp4",
   },

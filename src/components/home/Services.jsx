@@ -27,7 +27,7 @@ const services = [
     description:
       "Contemporary partition solutions and glass systems tailored to create bright, open, and functional interiors.",
     image: "/home/partition.webp",
-    link: "/brands",
+    link: "/partitions-railing",
   },
   {
     icon: <Sofa className="w-10 h-10 stroke-[1.2]" />,
