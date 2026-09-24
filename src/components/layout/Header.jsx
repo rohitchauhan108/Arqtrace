@@ -216,15 +216,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="mt-8">
-          <h3 className="text-base font-bold uppercase tracking-wider mb-4 text-white">Newsletter Subscribe</h3>
-          <form className="relative flex items-center" onSubmit={(e) => e.preventDefault()}>
-            <input type="email" placeholder="Email address" className="w-full bg-stone-900 border border-stone-800 px-4 py-3.5 text-sm text-white placeholder-stone-500 focus:outline-none focus:border-[#bd845c] transition-colors pr-14" />
-            <button type="submit" className="absolute right-0 top-0 h-full px-4 bg-[#bd845c] text-white hover:bg-[#a6704c] transition-colors flex items-center justify-center">
-              <Send className="w-4 h-4" />
-            </button>
-          </form>
-        </div>
+       
       </div>
 
       <div className={cn("fixed inset-0 bg-[#2d1e18] z-50 transition-all duration-500 lg:hidden overflow-y-auto", isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0")}>
