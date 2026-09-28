@@ -2,10 +2,31 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title:
-    "Arqtrace Lumani Schuco Aluminium Windows and Doors | Premium Aluminium Systems",
-  description:
-    "Discover Arqtrace Lumani Schuco aluminium windows and doors with advanced German technology, superior insulation, security, and modern design for homes and commercial spaces.",
+  title: "Lumani Schuco Aluminium Windows: German Technology",
+  description: "Arqtrace Lumani Schuco aluminium windows and doors with advanced German technology, superior thermal & acoustic insulation in Dehradun.",
+  alternates: {
+    canonical: "https://arqtrace.com/lumani-schuco-aluminium-windows/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://arqtrace.com/lumani-schuco-aluminium-windows/",
+    title: "Lumani Schuco Aluminium Windows: German Technology",
+    description: "Arqtrace Lumani Schuco aluminium windows and doors with advanced German technology, superior thermal & acoustic insulation in Dehradun.",
+    images: [
+      {
+        url: "/lumani/18.webp",
+        width: 1200,
+        height: 630,
+        alt: "Lumani Schuco Aluminium Windows and Doors",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Lumani Schuco Aluminium Windows: German Technology",
+    description: "Arqtrace Lumani Schuco aluminium windows and doors with advanced German technology, superior thermal & acoustic insulation in Dehradun.",
+    images: ["/lumani/18.webp"],
+  },
 };
 
 const highlights = [

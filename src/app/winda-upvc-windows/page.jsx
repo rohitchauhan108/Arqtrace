@@ -2,9 +2,31 @@ import Link from "next/link";
 import { ArrowRight, CheckCircle2 } from "lucide-react";
 
 export const metadata = {
-  title: "Arqtrace Winda uPVC Windows and Doors | Premium uPVC Systems",
-  description:
-    "Explore Arqtrace Winda uPVC windows and doors for modern living, with energy efficiency, low maintenance, design flexibility, and secure sliding solutions.",
+  title: "Winda uPVC Windows: Energy Efficient & Low Maintenance",
+  description: "Arqtrace Winda uPVC windows and doors: energy efficient, weather-resistant, and low maintenance. Get a 21-year warranty in Dehradun.",
+  alternates: {
+    canonical: "https://arqtrace.com/winda-upvc-windows/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://arqtrace.com/winda-upvc-windows/",
+    title: "Winda uPVC Windows: Energy Efficient & Low Maintenance",
+    description: "Arqtrace Winda uPVC windows and doors: energy efficient, weather-resistant, and low maintenance. Get a 21-year warranty in Dehradun.",
+    images: [
+      {
+        url: "/winda.webp",
+        width: 1200,
+        height: 630,
+        alt: "Winda uPVC Windows and Doors by Arqtrace",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Winda uPVC Windows: Energy Efficient & Low Maintenance",
+    description: "Arqtrace Winda uPVC windows and doors: energy efficient, weather-resistant, and low maintenance. Get a 21-year warranty in Dehradun.",
+    images: ["/winda.webp"],
+  },
 };
 
 const highlights = [

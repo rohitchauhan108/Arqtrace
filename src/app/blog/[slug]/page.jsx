@@ -18,11 +18,28 @@ export async function generateMetadata({ params }) {
   return {
     title: `${post.title} | Arqtrace PVT. LTD.`,
     description: post.excerpt,
+    alternates: {
+      canonical: `https://arqtrace.com/blog/${slug}/`,
+    },
     openGraph: {
-      title: post.title,
+      title: `${post.title} | Arqtrace PVT. LTD.`,
+      description: post.excerpt,
+      url: `https://arqtrace.com/blog/${slug}/`,
+      images: [
+        {
+          url: post.heroImage,
+          width: 1200,
+          height: 630,
+          alt: post.title,
+        }
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${post.title} | Arqtrace PVT. LTD.`,
       description: post.excerpt,
       images: [post.heroImage],
-      type: "article",
     },
   };
 }

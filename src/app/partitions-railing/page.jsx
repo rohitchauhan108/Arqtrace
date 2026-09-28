@@ -1,9 +1,31 @@
 import PartitionsRailingContent from "@/components/pages/PartitionsRailingContent";
 
 export const metadata = {
-  title: "Partitions, Railing & Skyline Systems | Arqtrace PVT. LTD.",
-  description:
-    "Discover premium interior solutions: modern glass partitions, Schueco safety railing systems GR 52/GR 58, and Skyline S1200 AIR barrier-free sliding doors by Arqtrace.",
+  title: "Glass Partitions, Railings & Skylights in Dehradun",
+  description: "Premium interior & exterior solutions by Arqtrace: modern glass partitions, safety railing systems, and barrier-free sliding doors.",
+  alternates: {
+    canonical: "https://arqtrace.com/partitions-railing/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://arqtrace.com/partitions-railing/",
+    title: "Glass Partitions, Railings & Skylights in Dehradun",
+    description: "Premium interior & exterior solutions by Arqtrace: modern glass partitions, safety railing systems, and barrier-free sliding doors.",
+    images: [
+      {
+        url: "/partition/partition.webp",
+        width: 1200,
+        height: 630,
+        alt: "Glass Partitions and Railing Systems by Arqtrace",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Glass Partitions, Railings & Skylights in Dehradun",
+    description: "Premium interior & exterior solutions by Arqtrace: modern glass partitions, safety railing systems, and barrier-free sliding doors.",
+    images: ["/partition/partition.webp"],
+  },
 };
 
 export default function PartitionsRailingPage() {

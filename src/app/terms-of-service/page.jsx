@@ -1,6 +1,33 @@
 export const metadata = {
-  title: "Terms of Service | Arqtrace PVT. LTD.",
-  description: "Terms of service for Arqtrace website and services.",
+  title: "Terms of Service & Conditions: Arqtrace Pvt. Ltd.",
+  description: "Arqtrace Pvt. Ltd. terms of service: usage terms, service conditions, payment terms, liability, and your rights as a customer.",
+  alternates: {
+    canonical: "https://arqtrace.com/terms-of-service/",
+  },
+  openGraph: {
+    type: "website",
+    url: "https://arqtrace.com/terms-of-service/",
+    title: "Terms of Service & Conditions: Arqtrace Pvt. Ltd.",
+    description: "Arqtrace Pvt. Ltd. terms of service: usage terms, service conditions, payment terms, liability, and your rights as a customer.",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "Arqtrace Terms of Service",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Terms of Service & Conditions: Arqtrace Pvt. Ltd.",
+    description: "Arqtrace Pvt. Ltd. terms of service: usage terms, service conditions, payment terms, liability, and your rights as a customer.",
+    images: ["/logo.png"],
+  },
+  robots: {
+    index: false,
+    follow: false,
+  },
 };
 
 export default function TermsOfServicePage() {
