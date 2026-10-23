@@ -1,4 +1,5 @@
 import { Plus_Jakarta_Sans } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import CustomCursor from "@/components/ui/CustomCursor";
 import SmoothScroll from "@/components/ui/SmoothScroll";
@@ -83,12 +84,28 @@ export const metadata = {
   icons: {
     icon: "/favicon.png",
   },
+  verification: {
+    google: "qMKQAmydCAHyjVHt0lj2MhQxquaaMA7rFnY1x_n3vdI",
+  },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${plusJakartaSans.variable} antialiased`}>
       <body className="min-h-screen bg-white overflow-x-hidden">
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J1369HYQKV"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-J1369HYQKV');
+          `}
+        </Script>
         <CustomCursor />
         <Header />
         {/* <FloatingActions /> */}
