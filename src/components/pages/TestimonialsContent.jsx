@@ -29,7 +29,7 @@ const testimonialsData = [
     name: "Mr. Puneet Sharma",
     role: "Hotel Lemon Tree",
     text: "First time hum uPVC se switchover kare Schüco main, Schüco ka experience hume accha laga. Expensive hai par hume samajh main aaya ki jo expense humne kiya hai woh worthful hai. Quality, finish aur installation sab top-notch hai.",
-    image: "/testimonial/puneet-sharma.jpeg",
+    image: "/testimonial/puneet-sharma1.webp",
     type: "image",
     rating: 5,
     location: "Rishikesh, Uttarakhand",
@@ -193,7 +193,7 @@ const TestimonialsContent = () => {
       <section
         className="relative py-24 lg:py-32 bg-stone-50 overflow-hidden select-none"
         style={{
-          backgroundImage: "url('/projects-bg.png')",
+          backgroundImage: "url('/projects-bg.webp')",
           backgroundBlendMode: "overlay",
         }}
       >

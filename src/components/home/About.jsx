@@ -16,14 +16,14 @@ const About = () => {
             <div className="col-span-6 flex flex-col gap-4">
               <div className="aspect-[4/5] overflow-hidden shadow-sm">
                 <img
-                  src="/about-section/1.jpg"
+                  src="/about-section/1.webp"
                   alt="Arqtrace premium aluminium window"
                   className="w-full h-full object-cover"
                 />
               </div>
               <div className="aspect-[4/3] overflow-hidden shadow-sm">
                 <img
-                  src="/about-section/2.jpg"
+                  src="/about-section/2.webp"
                   alt="Arqtrace premium door and partition"
                   className="w-full h-full object-cover"
                 />
@@ -33,7 +33,7 @@ const About = () => {
             <div className="col-span-6">
               <div className="h-full min-h-[450px] lg:min-h-[550px] overflow-hidden shadow-sm">
                 <img
-                  src="/about-section/3.jpg"
+                  src="/about-section/3.webp"
                   alt="Arqtrace installation expertise"
                   className="w-full h-full object-cover"
                 />

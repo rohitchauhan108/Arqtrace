@@ -13,7 +13,7 @@ export const metadata = {
     description: "Contact Arqtrace in Dehradun for premium aluminium & uPVC windows, doors, partitions, and outdoor furniture. Get a free consultation.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "Contact Arqtrace Pvt. Ltd.",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Contact Arqtrace: Free Consultation in Dehradun",
     description: "Contact Arqtrace in Dehradun for premium aluminium & uPVC windows, doors, partitions, and outdoor furniture. Get a free consultation.",
-    images: ["/logo.png"],
+    images: ["/logo.webp"],
   },
 };
 

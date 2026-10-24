@@ -153,7 +153,7 @@ const AboutContent = () => {
       <section
         className="relative py-24  lg:py-32 overflow-hidden select-none bg-stone-50"
         style={{
-          backgroundImage: "url('/about-section/1.jpg')",
+          backgroundImage: "url('/about-section/1.webp')",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundBlendMode: "overlay",
@@ -381,7 +381,7 @@ const AboutContent = () => {
 
       {/* Partner Logos Marquee Section */}
       <section className="py-20 lg:py-24 bg-[#fbf9f4] relative overflow-hidden select-none">
-        <div className="absolute inset-0 bg-[url('/bg-pattern.png')] opacity-30 pointer-events-none" />
+        <div className="absolute inset-0 bg-[url('/bg-pattern.webp')] opacity-30 pointer-events-none" />
 
         <div className="container mx-auto px-6 lg:px-16 relative z-10">
           {/* Section Heading */}
@@ -420,7 +420,7 @@ const AboutContent = () => {
                 className="w-72 lg:w-80 h-36 flex items-center justify-center p-6 mx-6 bg-white rounded-lg shadow-md border border-stone-100"
               >
                 <img
-                  src={`/about-section/logo${num}.png`}
+                  src={`/about-section/logo${num}.webp`}
                   alt={`Partner Logo ${num}`}
                   className="max-w-full max-h-full object-contain"
                 />
@@ -440,7 +440,7 @@ const AboutContent = () => {
                 className="w-72 lg:w-80 h-36 flex items-center justify-center p-6 mx-6 bg-white rounded-lg shadow-md border border-stone-100"
               >
                 <img
-                  src={`/about-section/logo${num}.png`}
+                  src={`/about-section/logo${num}.webp`}
                   alt={`Partner Logo Cloned ${num}`}
                   className="max-w-full max-h-full object-contain"
                 />

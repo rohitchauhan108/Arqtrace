@@ -13,7 +13,7 @@ export const metadata = {
     description: "Read testimonials and watch video reviews from Arqtrace clients. Premium windows, doors, and furniture trusted by 600+ projects.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "Arqtrace Client Testimonials",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Arqtrace Client Testimonials & Video Reviews in UK",
     description: "Read testimonials and watch video reviews from Arqtrace clients. Premium windows, doors, and furniture trusted by 600+ projects.",
-    images: ["/logo.png"],
+    images: ["/logo.webp"],
   },
 };
 

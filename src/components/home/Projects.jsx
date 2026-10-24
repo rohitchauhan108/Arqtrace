@@ -15,7 +15,7 @@ const projects = [
     title: "Lemontree, Rishikesh ",
     // category: "Energy-Efficient Living",
     category: "Contemporary uPVC Window Systems",
-    image: "/home/lemon-tree.jpg",
+    image: "/home/lemon-tree.webp",
   },
   {
     title: "Residence, Mr. Hunny Sethi",
