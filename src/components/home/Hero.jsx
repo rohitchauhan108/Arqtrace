@@ -167,6 +167,7 @@ const Hero = () => {
                 src={slide.mainImage}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 alt={`Select slide ${index + 1}`}
+                loading="lazy"
               />
             </button>
           ))}

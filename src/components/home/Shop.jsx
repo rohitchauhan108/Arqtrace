@@ -48,6 +48,7 @@ const Shop = () => {
                   src={product.image} 
                   alt={product.name}
                   className="w-full h-full object-contain group-hover:scale-110 transition-transform duration-500"
+                  loading="lazy"
                 />
                 <button className="absolute -bottom-10 group-hover:bottom-4 left-4 right-4 bg-secondary text-white py-3 font-bold text-sm uppercase tracking-wider flex items-center justify-center gap-2 transition-all duration-300 hover:bg-primary">
                   <ShoppingCart className="w-4 h-4" />

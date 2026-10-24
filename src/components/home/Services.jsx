@@ -85,6 +85,7 @@ const Services = () => {
                     src={service.image}
                     alt={service.title}
                     className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 group-hover:scale-105 transition-transform duration-700 ease-out"
+                    loading="lazy"
                   />
                   <div className="absolute top-3 right-3 text-[#bd845c]/20 group-hover:text-white/40 transition-colors">
                     <svg

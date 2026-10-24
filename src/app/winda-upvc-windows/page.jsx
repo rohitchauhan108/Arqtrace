@@ -124,6 +124,7 @@ export default function WindaUpvcWindowsPage() {
                       src="/winda/5.webp"
                       alt="Why Choose uPVC Windows and Doors?"
                       className="w-full h-72 object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -139,6 +140,7 @@ export default function WindaUpvcWindowsPage() {
                       src="/winda/7.webp"
                       alt="Transform Your Home with Sliding uPVC Solutions"
                       className="w-full h-56 object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <h3 className="text-2xl font-serif font-bold mb-5">
@@ -171,6 +173,7 @@ export default function WindaUpvcWindowsPage() {
                       src="/winda/6.webp"
                       alt="Winda uPVC – Innovation Meets Quality"
                       className="w-full h-56 object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <h3 className="text-2xl font-serif font-bold mb-5">
@@ -229,6 +232,7 @@ export default function WindaUpvcWindowsPage() {
                         src="/winda/3.webp"
                         alt="Build a Better Future with Arqtrace"
                         className="w-full h-72 lg:h-80 object-cover transform transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
                       />
                     </div>
                   </div>

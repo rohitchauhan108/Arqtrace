@@ -282,6 +282,7 @@ const TestimonialsContent = () => {
                     src={t.image}
                     alt={t.name}
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute top-4 left-4 bg-white/95 backdrop-blur-sm px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
                     <span className="text-[#bd845c] text-xs">

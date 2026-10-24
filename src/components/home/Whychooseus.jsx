@@ -150,6 +150,7 @@ const WhyChoose = () => {
                     src="/images/4.webp"
                     alt="Installation"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-[#2d1e18]/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
@@ -168,6 +169,7 @@ const WhyChoose = () => {
                     src="/project/p2/6.webp"
                     alt="Architecture"
                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-[#2d1e18]/5 group-hover:bg-transparent transition-colors duration-500" />
                 </div>

@@ -55,6 +55,7 @@ const BlogContent = () => {
                       alt={post.title}
                       onError={(e) => (e.currentTarget.src = "https://picsum.photos/seed/default/800/600")}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      loading="lazy"
                     />
                   </div>
                   <div className="p-6">

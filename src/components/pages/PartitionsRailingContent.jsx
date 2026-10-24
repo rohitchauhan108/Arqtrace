@@ -102,6 +102,7 @@ const PartitionsRailingContent = () => {
                       src={item.image}
                       alt={item.name}
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <div

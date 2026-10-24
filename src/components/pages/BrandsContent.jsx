@@ -66,7 +66,7 @@ const BrandsContent = () => {
               <div className={`lg:col-span-6 ${brand.name === "Winda" ? "lg:order-2" : "lg:order-1"}`}>
                 <div className="relative">
                   <div className="aspect-[4/3] overflow-hidden shadow-sm">
-                    <img src={brand.image} alt={brand.name} className="w-full h-full object-cover" />
+                    <img src={brand.image} alt={brand.name} className="w-full h-full object-cover" loading="lazy" />
                   </div>
                   <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-[#bd845c]/20 -z-10" />
                 </div>

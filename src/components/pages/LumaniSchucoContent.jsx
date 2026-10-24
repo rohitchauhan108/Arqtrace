@@ -99,7 +99,7 @@ const LumaniSchucoContent = () => {
             <div className="lg:col-span-6 relative">
               <div className="absolute -inset-4 bg-[#fbf9f4] -z-10 transform -rotate-1 translate-x-2" />
               <div className=" overflow-hidden border border-stone-100 shadow-xs group">
-                <img src="/lumani.webp" alt="Lumani Schüco window" className="w-full h-full object-cover transform  transition-transform duration-500" />
+                <img src="/lumani.webp" alt="Lumani Schüco window" className="w-full h-full object-cover transform  transition-transform duration-500" loading="lazy" />
               </div>
             </div>
 
@@ -170,6 +170,7 @@ const LumaniSchucoContent = () => {
                           src={product.image} 
                           alt={product.title} 
                           className={`w-full h-full object-cover transform transition-all duration-700 ease-out ${currentTab === 'specs' ? 'scale-102 blur-xs brightness-90' : 'group-hover:scale-104'}`} 
+                          loading="lazy"
                         />
                         {/* Dynamic Layered Specs Overlay when clicked */}
                         {currentTab === "specs" && (
@@ -241,7 +242,7 @@ const LumaniSchucoContent = () => {
             {APPLICATIONS.map((app) => (
               <div key={app.title} className="group bg-white flex flex-col h-full border border-stone-100 hover:border-stone-200 hover:shadow-xl transition-all duration-500">
                 <div className="aspect-4/3 overflow-hidden bg-stone-100 relative">
-                  <img src={app.image} alt={app.title} className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500" />
+                  <img src={app.image} alt={app.title} className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-500" loading="lazy" />
                   <div className="absolute inset-0 bg-[#2d1e18]/10 group-hover:bg-transparent transition-colors duration-500" />
                 </div>
                 <div className="p-8 grow flex flex-col justify-between">

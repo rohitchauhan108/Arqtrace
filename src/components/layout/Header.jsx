@@ -179,7 +179,7 @@ const Header = () => {
         <div>
           <div className="flex justify-between items-center mb-10">
             <div className="flex items-center">
-              <img src="/logo.webp" alt="Arqtrace side logo" className="h-20 w-auto object-contain brightness-0 invert" />
+              <img src="/logo.webp" alt="Arqtrace side logo" className="h-20 w-auto object-contain brightness-0 invert" loading="lazy" />
             </div>
             <button onClick={() => setIsSidebarOpen(false)} className="text-stone-400 hover:text-white transition-colors p-1">
               <X className="w-6 h-6" />
@@ -222,7 +222,7 @@ const Header = () => {
       <div className={cn("fixed inset-0 bg-[#2d1e18] z-50 transition-all duration-500 lg:hidden overflow-y-auto", isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0")}>
         <div className="p-8">
           <div className="flex justify-between items-center mb-12">
-            <img src="/logo.webp" alt="Arqtrace mobile logo" className="h-10 w-auto object-contain brightness-0 invert" />
+            <img src="/logo.webp" alt="Arqtrace mobile logo" className="h-10 w-auto object-contain brightness-0 invert" loading="lazy" />
             <X className="w-8 h-8 text-white cursor-pointer" onClick={() => setIsMobileMenuOpen(false)} />
           </div>
           <ul className="space-y-4 text-white text-lg font-medium">

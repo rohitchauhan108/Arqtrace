@@ -110,6 +110,7 @@ const GebeContent = () => {
                   src="/gebe/1.webp"
                   alt="GEBE outdoor furniture"
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.02]"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -136,7 +137,7 @@ const GebeContent = () => {
               <div key={item.title} className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
                 <div className={`lg:col-span-6 ${index % 2 === 1 ? "lg:order-2" : ""}`}>
                   <div className="aspect-4/3 overflow-hidden border border-stone-200 bg-white shadow-md">
-                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
+                    <img src={item.image} alt={item.title} className="w-full h-full object-cover" loading="lazy" />
                   </div>
                 </div>
 

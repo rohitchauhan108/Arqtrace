@@ -76,6 +76,7 @@ const Testimonials = () => {
                 src={current.image}
                 alt={current.name}
                 className="w-full h-full object-cover transition-all duration-700 ease-in-out transform hover:scale-105 opacity-0 animate-fade-in"
+                loading="lazy"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/40 via-transparent to-transparent opacity-60" />
             </div>

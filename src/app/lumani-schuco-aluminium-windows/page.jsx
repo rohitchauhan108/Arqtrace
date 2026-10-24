@@ -127,6 +127,7 @@ export default function LumaniSchucoAluminiumWindowsPage() {
                       src="/lumani/18.webp"
                       alt="Modern aluminium architectural windows"
                       className="w-full h-72 object-cover"
+                      loading="lazy"
                     />
                   </div>
                 </div>
@@ -142,6 +143,7 @@ export default function LumaniSchucoAluminiumWindowsPage() {
                       src="/lumani/15.webp"
                       alt="The Lumani Schuco Advantage"
                       className="w-full h-56 object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <h3 className="text-2xl font-serif font-bold mb-5">
@@ -174,6 +176,7 @@ export default function LumaniSchucoAluminiumWindowsPage() {
                       src="/lumani/17.webp"
                       alt="Commitment to Quality and Service"
                       className="w-full h-56 object-cover"
+                      loading="lazy"
                     />
                   </div>
                   <h3 className="text-2xl font-serif font-bold mb-5">
@@ -236,6 +239,7 @@ export default function LumaniSchucoAluminiumWindowsPage() {
                         src="/lumani/16.webp"
                         alt="Transforming Spaces with Aluminium Windows and Doors"
                         className="w-full h-72 lg:h-80 object-cover transform transition-transform duration-700 group-hover:scale-105"
+                        loading="lazy"
                       />
                     </div>
                   </div>

@@ -19,6 +19,7 @@ const About = () => {
                   src="/about-section/1.webp"
                   alt="Arqtrace premium aluminium window"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="aspect-[4/3] overflow-hidden shadow-sm">
@@ -26,6 +27,7 @@ const About = () => {
                   src="/about-section/2.webp"
                   alt="Arqtrace premium door and partition"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -36,6 +38,7 @@ const About = () => {
                   src="/about-section/3.webp"
                   alt="Arqtrace installation expertise"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>

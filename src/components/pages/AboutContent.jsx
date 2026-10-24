@@ -50,6 +50,7 @@ const AboutContent = () => {
                   src="/images/6.webp"
                   alt="Arqtrace premium aluminium window"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="aspect-[4/5] sm:aspect-square overflow-hidden shadow-md border border-stone-100 bg-stone-50">
@@ -57,6 +58,7 @@ const AboutContent = () => {
                   src="/images/8.webp"
                   alt="Arqtrace installation expertise"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="aspect-[4/5] sm:aspect-square overflow-hidden shadow-md border border-stone-100 bg-stone-50">
@@ -64,6 +66,7 @@ const AboutContent = () => {
                   src="/images/7.webp"
                   alt="Arqtrace premium door and partition"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
               <div className="aspect-[4/5] sm:aspect-square overflow-hidden shadow-md border border-stone-100 bg-stone-50">
@@ -72,6 +75,7 @@ const AboutContent = () => {
                   src="/images/9.webp"
                   alt="Arqtrace outdoor furniture"
                   className="w-full h-full object-cover"
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -185,6 +189,7 @@ const AboutContent = () => {
                     src="/images/4.webp"
                     alt="Consultation & Design"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    loading="lazy"
                   />
                 </div>
                
@@ -211,6 +216,7 @@ const AboutContent = () => {
                     src="/images/3.webp"
                     alt="Material Selection"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    loading="lazy"
                   />
                 </div>
               
@@ -238,6 +244,7 @@ const AboutContent = () => {
                     src="/images/1.webp"
                     alt="Precision Engineering"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    loading="lazy"
                   />
                 </div>
                
@@ -263,6 +270,7 @@ const AboutContent = () => {
                     src="/images/5.webp"
                     alt="Expert Installation"
                     className="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
+                    loading="lazy"
                   />
                 </div>
              
@@ -423,6 +431,7 @@ const AboutContent = () => {
                   src={`/about-section/logo${num}.webp`}
                   alt={`Partner Logo ${num}`}
                   className="max-w-full max-h-full object-contain"
+                  loading="lazy"
                 />
               </div>
             ))}
@@ -443,6 +452,7 @@ const AboutContent = () => {
                   src={`/about-section/logo${num}.webp`}
                   alt={`Partner Logo Cloned ${num}`}
                   className="max-w-full max-h-full object-contain"
+                  loading="lazy"
                 />
               </div>
             ))}
