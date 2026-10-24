@@ -12,7 +12,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-16 pb-16 border-b border-white/5">
           <div className="lg:col-span-4 space-y-8">
             <Link href="/" className="inline-block">
-              <img src="/logo.png" alt="Arqtrace Logo" className="h-20 w-auto object-contain brightness-0 invert" />
+              <img src="/logo.webp" alt="Arqtrace Logo" className="h-20 w-auto object-contain brightness-0 invert" />
             </Link>
             <p className="text-white/70 text-sm leading-relaxed max-w-sm font-sans">
               Arqtrace is an all-in-one solution for premium aluminum and uPVC windows, doors, partitions, and outdoor furniture. We bring quality, design, and long-term reliability to every place we touch.

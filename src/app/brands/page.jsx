@@ -13,7 +13,7 @@ export const metadata = {
     description: "Explore Arqtrace's premium brands: Lumani Schuco aluminium windows, Winda uPVC doors, and GEBE outdoor furniture with trusted quality.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "Arqtrace Premium Brands",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Premium Brands: Lumani Schuco, Winda uPVC & GEBE",
     description: "Explore Arqtrace's premium brands: Lumani Schuco aluminium windows, Winda uPVC doors, and GEBE outdoor furniture with trusted quality.",
-    images: ["/logo.png"],
+    images: ["/logo.webp"],
   },
 };
 

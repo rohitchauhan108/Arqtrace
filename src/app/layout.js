@@ -19,7 +19,8 @@ export const metadata = {
     default: "Arqtrace: Premium Aluminium & uPVC Windows in Dehradun",
     template: "%s | Arqtrace PVT. LTD.",
   },
-  description: "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
+  description:
+    "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
   keywords: [
     "Aluminum window manufacturers",
     "Aluminum Door manufacturers",
@@ -39,7 +40,7 @@ export const metadata = {
     "aluminium windows price",
     "premium aluminium windows",
     "aluminium windows for villas",
-    "windows with installation in dehradun"
+    "windows with installation in dehradun",
   ],
   authors: [{ name: "Arqtrace Pvt. Ltd.", url: "https://arqtrace.com" }],
   creator: "Arqtrace Pvt. Ltd.",
@@ -53,10 +54,11 @@ export const metadata = {
     url: "https://arqtrace.com/",
     siteName: "Arqtrace Pvt. Ltd.",
     title: "Arqtrace: Premium Aluminium & uPVC Windows in Dehradun",
-    description: "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
+    description:
+      "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "Arqtrace Pvt. Ltd.",
@@ -66,8 +68,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arqtrace: Premium Aluminium & uPVC Windows in Dehradun",
-    description: "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
-    images: ["/logo.png"],
+    description:
+      "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
+    images: ["/logo.webp"],
     creator: "@arqtrace",
   },
   robots: {
@@ -82,7 +85,7 @@ export const metadata = {
     },
   },
   icons: {
-    icon: "/favicon.png",
+    icon: "/favicon.webp",
   },
   verification: {
     google: "qMKQAmydCAHyjVHt0lj2MhQxquaaMA7rFnY1x_n3vdI",
@@ -110,7 +113,7 @@ export default function RootLayout({ children }) {
         <Header />
         {/* <FloatingActions /> */}
         <SmoothScroll>
-          <FloatingIcons/>
+          <FloatingIcons />
           {children}
           <Footer />
         </SmoothScroll>

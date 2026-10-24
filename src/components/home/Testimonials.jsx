@@ -45,7 +45,7 @@ const Testimonials = () => {
   return (
     <section
       id="testimonials"
-      style={{ backgroundImage: "url('/projects-bg.png')" }}
+      style={{ backgroundImage: "url('/projects-bg.webp')" }}
       className="relative py-24 bg-stone-50/50 bg-blend-overlay overflow-hidden select-none"
     >
       <div className="container mx-auto px-6 lg:px-16">

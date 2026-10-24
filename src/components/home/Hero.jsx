@@ -39,7 +39,7 @@ const SLIDES_DATA = [
     title: "Elegant Window Systems That Transform Every Space",
     description:
       "Create brighter, more sophisticated interiors with premium aluminium facades, sliding windows and structural glazing solutions engineered for strength, aesthetics, and lasting performance.",
-    mainImage: "/about-section/1.jpg",
+    mainImage: "/about-section/1.webp",
   },
   {
     subtitle: "Outdoor Living Collection",
@@ -67,7 +67,7 @@ const Hero = () => {
   return (
     <section
       className="relative min-h-[750px] lg:h-[850px] w-full bg-[#fbf9f4] overflow-hidden flex items-center bg-repeat"
-      style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+      style={{ backgroundImage: "url('/hero-bg.webp')" }}
     >
       <div className="absolute left-6 bottom-1/3 z-20 hidden md:flex flex-col gap-6 text-[#7c695c]">
         <a
@@ -138,7 +138,7 @@ const Hero = () => {
             >
               <div
                 className="absolute -bottom-8 -left-8 w-1/2 h-1/3 bg-cover bg-center -z-10 shadow-lg border border-white opacity-40"
-                style={{ backgroundImage: "url('/hero-bg.jpg')" }}
+                style={{ backgroundImage: "url('/hero-bg.webp')" }}
               />
 
               <div className="relative w-full h-full overflow-hidden bg-stone-100 flex items-center justify-center">

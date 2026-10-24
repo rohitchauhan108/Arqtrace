@@ -9,7 +9,8 @@ import WhyChoose from "@/components/home/Whychooseus";
 
 export const metadata = {
   title: "Arqtrace: Premium Aluminium & uPVC Windows in Dehradun",
-  description: "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
+  description:
+    "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
   alternates: {
     canonical: "https://arqtrace.com/",
   },
@@ -17,10 +18,11 @@ export const metadata = {
     type: "website",
     url: "https://arqtrace.com/",
     title: "Arqtrace: Premium Aluminium & uPVC Windows in Dehradun",
-    description: "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
+    description:
+      "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "Arqtrace Pvt. Ltd.",
@@ -30,8 +32,9 @@ export const metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Arqtrace: Premium Aluminium & uPVC Windows in Dehradun",
-    description: "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
-    images: ["/logo.png"],
+    description:
+      "Arqtrace is Dehradun's trusted partner for premium aluminium windows, uPVC doors, outdoor furniture, and partitions. 600+ projects delivered.",
+    images: ["/logo.webp"],
   },
 };
 

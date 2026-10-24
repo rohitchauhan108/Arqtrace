@@ -77,7 +77,7 @@ const Header = () => {
       <nav className={cn("w-full bg-white transition-all duration-300 sm:py-2 md:py-4 lg:py-0 border-b border-stone-100", isSticky ? "fixed top-0 left-0 shadow-md z-50 animate-slideDown" : "relative")}>
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link href="/" className="flex items-center py-4">
-            <img src="/logo.png" alt="Arqtrace Logo" className="h-10 md:h-18 w-auto object-contain" />
+            <img src="/logo.webp" alt="Arqtrace Logo" className="h-10 md:h-18 w-auto object-contain" />
           </Link>
 
           <ul className="hidden lg:flex items-center">
@@ -179,7 +179,7 @@ const Header = () => {
         <div>
           <div className="flex justify-between items-center mb-10">
             <div className="flex items-center">
-              <img src="/logo.png" alt="Arqtrace side logo" className="h-20 w-auto object-contain brightness-0 invert" />
+              <img src="/logo.webp" alt="Arqtrace side logo" className="h-20 w-auto object-contain brightness-0 invert" />
             </div>
             <button onClick={() => setIsSidebarOpen(false)} className="text-stone-400 hover:text-white transition-colors p-1">
               <X className="w-6 h-6" />
@@ -222,7 +222,7 @@ const Header = () => {
       <div className={cn("fixed inset-0 bg-[#2d1e18] z-50 transition-all duration-500 lg:hidden overflow-y-auto", isMobileMenuOpen ? "translate-x-0 opacity-100" : "translate-x-full opacity-0")}>
         <div className="p-8">
           <div className="flex justify-between items-center mb-12">
-            <img src="/logo.png" alt="Arqtrace mobile logo" className="h-10 w-auto object-contain brightness-0 invert" />
+            <img src="/logo.webp" alt="Arqtrace mobile logo" className="h-10 w-auto object-contain brightness-0 invert" />
             <X className="w-8 h-8 text-white cursor-pointer" onClick={() => setIsMobileMenuOpen(false)} />
           </div>
           <ul className="space-y-4 text-white text-lg font-medium">
