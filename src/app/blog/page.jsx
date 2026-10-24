@@ -13,7 +13,7 @@ export const metadata = {
     description: "Explore the Arqtrace blog for the latest guides on Schüco aluminium windows, Winda uPVC solutions, and architectural design trends.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "The Arqtrace Blog",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Arqtrace Blog: Aluminium Windows & Architecture Trends",
     description: "Explore the Arqtrace blog for the latest guides on Schüco aluminium windows, Winda uPVC solutions, and architectural design trends.",
-    images: ["/logo.png"],
+    images: ["/logo.webp"],
   },
 };
 

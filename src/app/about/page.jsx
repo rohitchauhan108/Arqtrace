@@ -13,7 +13,7 @@ export const metadata = {
     description: "Discover Arqtrace, Dehradun's trusted provider of premium aluminium & uPVC windows, doors, and outdoor furniture. 13+ years expertise.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "About Arqtrace Pvt. Ltd.",
@@ -24,7 +24,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "About Arqtrace: Premium Windows & Doors in Dehradun",
     description: "Discover Arqtrace, Dehradun's trusted provider of premium aluminium & uPVC windows, doors, and outdoor furniture. 13+ years expertise.",
-    images: ["/logo.png"],
+    images: ["/logo.webp"],
   },
 };
 

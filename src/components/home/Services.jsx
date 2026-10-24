@@ -44,7 +44,7 @@ const Services = () => {
     <section
       id="services"
       className="relative py-24 bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: "url('/services-bg.png')" }}
+      style={{ backgroundImage: "url('/services-bg.webp')" }}
     >
       <div className="absolute inset-0 bg-stone-50/90 z-0" />
 

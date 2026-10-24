@@ -11,7 +11,7 @@ export const metadata = {
     description: "Arqtrace Pvt. Ltd. privacy policy: how we collect, use, and protect visitor and customer information. Your data privacy is important.",
     images: [
       {
-        url: "/logo.png",
+        url: "/logo.webp",
         width: 1200,
         height: 630,
         alt: "Arqtrace Privacy Policy",
@@ -22,7 +22,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Privacy Policy & Data Protection: Arqtrace Pvt. Ltd.",
     description: "Arqtrace Pvt. Ltd. privacy policy: how we collect, use, and protect visitor and customer information. Your data privacy is important.",
-    images: ["/logo.png"],
+    images: ["/logo.webp"],
   },
   robots: {
     index: false,
